@@ -1,0 +1,2 @@
+ <!--<button class="btn-primary defaultBlueBtn mL10px fRyt wi-sm-100 "  @click.prevent="apply_for_finance()" v-show="form_step <= 3" >Proceed to your enquiry</button>-->
+ <button class="btn-primary defaultBlueBtn mL10px fRyt wi-sm-100 "  @click.prevent="proceed_to_dealer_selection()" v-show="form_step <= 3" >Proceed to your dealer</button>

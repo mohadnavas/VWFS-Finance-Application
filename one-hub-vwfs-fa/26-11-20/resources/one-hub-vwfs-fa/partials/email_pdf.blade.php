@@ -1,0 +1,3 @@
+<!-- <div class="float-left px-2"><img src="https://one-hub-assets.s3-ap-southeast-2.amazonaws.com/one-hub-vwfs/img/mail.svg" class="mr-1 "> <span class="email-txt"><a href="">Email me results</a></span> </div>
+<div class="float-right px-2"> <img src="https://one-hub-assets.s3-ap-southeast-2.amazonaws.com/one-hub-vwfs/img/download.svg" class="mr-1"> <span class="download-txt"><a href="">Download as PDF</a></span> </div>
+<div class="clearfix"></div> -->

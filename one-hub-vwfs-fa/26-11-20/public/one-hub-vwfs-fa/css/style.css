@@ -1,0 +1,4803 @@
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+ html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+
+/**
+* Remove default margin.
+*/
+
+@font-face {
+	font-family: VWHead-Bold;
+	src: url('../fonts/VWHead-Bold.otf');
+}
+@font-face {
+	font-family: VWHead-Regular;
+	src: url('../fonts/VWHead-Regular.otf');
+}
+@font-face {
+	font-family: VWHead-Light;
+	src: url('../fonts/vwhead-light.woff2');
+}
+@font-face {
+	font-family: VWText-Bold;
+	src: url('../fonts/VWText-Bold.otf');
+}
+@font-face {
+	font-family: VWText-Regular;
+	src: url('../fonts/VWTextWeb-Regular.woff');
+}
+@font-face {
+	font-family: VWText-Light;
+	src: url('../fonts/VWText-Light.otf');
+}
+
+
+
+body {
+  margin: 0;
+}
+
+
+:root{
+  --OH_blue: #001e50;
+  --OH_toggleWidth: 60px;
+  --OH_gray:#dfe4e8;
+  --OH_medium_gray:#6a767d;
+--OH_black:#000;
+--OH_hover:#007bff;
+}
+.Oh_blue{
+  color: var(--OH_blue);
+}
+.Oh_black{
+color: #000 !important;
+}
+.Oh_white{
+  color: #fff !important;
+}
+.flex-align-center{
+align-items: center;
+}
+.Oh_blue_all *{
+  color: var(--OH_blue);
+}
+label{
+  display: block;
+  font-size: 12px;
+  color: var(--OH_blue);
+}
+._oh_underline{
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--OH_blue);
+}
+a{
+  color: var(--OH_hover);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** Custom page styles **/
+
+
+
+
+
+/*    common styles*/
+
+body {
+  position: relative;
+  max-width: 2560px;
+  margin: 0 auto !important;
+}
+.container {
+  max-width: 1200px !important;
+}
+.vga-oh-common-containerOuterMain {
+  padding-top: 190px;
+}
+.vh_Display_flex{
+  display: flex;
+}
+.btn-primary.outlineBtnBtn{
+color: var(--OH_blue) !important;
+background-color: #fff !important;
+border-color:  var(--OH_blue);
+font-size: 16px;
+}
+.btn-primary.outlineBtnBtn:hover{
+color: var(--OH_hover) !important;
+}
+.modal-content{
+border-radius: 0;
+	border: 0 !important;
+}
+.overflowHide{
+overflow: hidden;
+}
+/*    common styles*/
+
+/* menu css*/
+.menu_active{
+overflow: hidden;
+}
+.vga-main-nav__c2khd{
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  padding: 20px 75px;
+  z-index: 999;
+  transition: padding 0.3s;
+}
+.vga-main-nav__c2khd.activeHeight{
+  padding-bottom: 100px;
+}
+.t-roc_mn-close{
+  font-size: 40px;
+  font-weight: lighter;
+}
+.t-roc_mn-close svg{
+  width: 25px;
+}
+.vga-main-nav__c2khd.dark{
+  background: rgba(255,255,255,1);
+}
+.vga-main-nav__c2khd.dark path{
+  fill: rgb(0, 30, 80);
+}
+.vga-main-nav__c2khd-btn{
+  background: none;
+  border: none;
+  outline: none !important;
+  cursor: pointer;
+  position: relative;
+  z-index: 99;
+}
+.__c2khdalign{
+  top:-2px;
+}
+.vga-nav-logo-container{
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  transition:all 0.6s;
+  -webkit-transition:all 0.6s;
+}
+.vga-nav-logo-wrapp-hdlg2{
+  position: relative;
+  top: 32px;
+}
+.logo_scrolled_pos{
+
+  /* margin-top: -10px; */
+
+
+
+}
+.vga-svg-logo-hdlg2{
+  width: 50px;
+}
+.vga-nav-logo-flex{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.vw-logo img{
+  width:50px;
+}
+.vgaLine{
+  height: 2px;
+  /* background:#fff; */
+  background: #001e50;
+}
+.vga-left-line{
+  width: 64%;
+  margin-right: 13px;
+}
+.vga-right-line{
+  width: 36%;
+  margin-left: 13px;
+}
+.overlay-content{
+  padding: 50px;
+}
+.VGA-T-Roc-sms .overlay .closebtn{
+  top: -25px;
+  left: 75px;
+}
+.VGA-T-Roc-sms .closebtn span{
+  display: inline-block;
+  line-height: 25px;
+  vertical-align: text-bottom;
+}
+ul.hub__menu_mnhd{
+  padding-left: 50px;
+}
+.hub__menu_mnhd li{
+  list-style: none;
+  margin-bottom: 20px;
+  padding: 2px 0;
+}
+/* change for shebin*/
+
+.VGA-T-Roc-sms .overlay{
+  overflow: hidden;
+}
+.VGA-T-Roc-sms .overlay-content{
+  position: relative;
+  top: 100px;
+  width: 100%;
+  /* text-align: center; */
+  /* transform: translate(0px, -50%); */
+}
+.VGA-T-Roc-sms .overlay a{
+  padding: 0;
+  color: #fff;
+}
+.VGA-T-Roc-sms-colsetext{
+  font-size: 13px;
+  padding-left: 0px;
+}
+.VGA-T-Roc-sms .overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0) radial-gradient(circle at 0% 0%, rgb(0, 67, 122) 0%, rgb(0, 30, 80) 100%) repeat scroll 0% 0%;
+  overflow-x: hidden;
+  overflow-y: auto;
+   -webkit-overflow-scrolling: touch; /* for iOs */
+}
+#myNav{
+  -webkit-transition: 0.2s ease-in-out;;
+  transition: 0.2s ease-in-out;
+}
+.VGA-T-Roc-sms .overlay .hub__menu_mnhd  a {
+    padding: 0px;
+    text-decoration: none;
+    font-family: VWHead-Light;
+    color: #fff;
+    font-weight: lighter;
+    font-size: 24px ;
+    display: block;
+    transition: 0.15s;
+}
+.VGA-T-Roc-sms .overlay a:hover, .overlay a:focus {
+  color: rgb(76, 199, 244) !important;
+}
+
+.VGA-T-Roc-sms .overlay .closebtn {
+    position: absolute;
+    font-size: 60px;
+    z-index: 9999;
+    transition: none;
+    text-decoration: none;
+}
+.VGA-T-Roc-sms .overlay .closebtn:hover path{
+  fill: rgb(76, 199, 244) !important; ;
+}
+
+.rightSideContentMenuUi {
+  color: #ffffff !important;
+  padding: 5px;
+  margin-top: 18px;
+  border-left: 1px solid #ffffff;
+  padding-left: 6%;
+}
+.rightSideContentMenuUi p.menuLinksTitle {
+  font-size: 14px !important;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.rightSideContentMenuUi li a {
+  font-size: 14px !important;
+  font-weight: normal !important;
+  font-family: VWText-Regular;
+  line-height: 16px !important;
+}
+.vga-oh-savn-menutdImg {
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+.rightSideContentMenuUi p.menu_BookDrive {
+  font-weight: 300;
+  font-family: VWHead-Light;
+}
+.rightSideContentMenuUi p.menu_BookDrive span {
+  font-family: VWHead-Bold;
+  font-weight: bold;
+}
+.webDNMobB {
+  display: none;
+}
+.rightSideContentMenuUi li {
+  /* padding: 8px 0; */
+}
+.vga-oh-savn-menutdImg{
+  max-width: 300px;
+}
+
+
+@media (max-width:1440px) {
+  .vga-left-line {
+    width: 62%;
+  }
+  }
+
+@media (max-width:1250px) {
+  .priv_pad{
+    padding: 0 !important;
+   
+  }
+}
+
+
+  @media (max-width:1024px) {
+  .vga-main-nav__c2khd {
+    /* padding: 10px 40px; */
+    /* changed */
+
+    z-index: 999;
+  }
+  .VWFS-savn-logo-wrapp-hdlg2 {
+    top: 25px;
+  }
+  .vga-svg-logo-hdlg2 {
+    width: 48px;
+  }
+  .__c2khdalign {
+    top: 1px;
+  }
+  .VWFS-savn-sms-colsetext {
+    top: 20px;
+    left: 70px;
+  }
+  .VWFS-savn-sms .overlay-content {
+    top: 4%;
+  }
+  ul.hub__menu_mnhd {
+    padding-left: 4%;
+  }
+  .hub__menu_mnhd li a {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .rightSideContentMenuUi {
+    padding-left: 10% !important;
+  }
+  .rightSideContentMenuUi {
+    border: none;
+  }
+  }
+
+  @media (max-width: 991px) {
+  .menuWebIcn {
+    display: none
+  }
+  .menuMobIcn {
+    display: block
+  }
+  ul.hub__menu_mnhd {
+    padding-left: 10px !important;
+  }
+  .hub__menu_mnhd li a {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .overlay-content {
+    padding: 25px;
+  }
+  .rightSideContentMenuUi {
+    margin: 0;
+  }
+  .webDNMobB {
+    display: block;
+  }
+  .mMT0 {
+    margin-top: 0 !important;
+  }
+  .rightSideContentMenuUi p.menuLinksTitle {
+    display: none;
+  }
+   .rightSideContentMenuUi li a{
+  }
+   .vga-oh-sdk-depositor-specialhead-out{
+		padding: 30px !important;
+	    padding-bottom: 0 !important;
+	  }
+  .pl-0{
+	  padding-left: 0 !important;
+	  }
+	  
+}
+
+
+
+
+
+  @media (max-width: 559px) {
+
+  .VGA-T-Roc-sms .overlay .closebtn{
+      left: 45px;
+    }
+  .vga-main-nav__c2khd {
+   padding-left: 30px;
+  }
+  .VWFS-savn-sms-colsetext {
+   left: 48px;
+   top: 20px;
+  }
+  ul.hub__menu_mnhd {
+   padding-left: 0;
+  }
+  .vga-svg-logo-hdlg2 {
+   width: 32px;
+  }
+  .vga-right-line, .vga-left-line {
+   width: 50%;
+  }
+  .VWFS-savn-logo-wrapp-hdlg2 {
+   top: 32px;
+  }
+  .VWFS-savn-sms .overlay-content {
+   top: 2%;
+  }
+  }
+
+/* menu css*/
+
+.container {
+  max-width: 1200px !important;
+}
+.vga-oh-common-containerOuterMain {
+  padding-top: 120px;
+}
+/*    common styles*/
+
+/*CSS test drive main step 1 choose model*/
+.vga-oh-savn-td-stepperBtnOuter1step {
+  display: block;
+  text-align: right;
+  margin-top: 90px;
+  margin-bottom: 40px;
+}
+.vga-oh-savn-td-custrowOut75px {
+  /*display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;*/
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.vga-savan-ChoosemodelDivbefore {
+  display: none;
+}
+.vga-oh-savn-TD1OuterMainHead {
+  font-size: 48px;
+  line-height: 56px;
+  color: #000000;
+  font-family: VWHead-Bold;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+.vga-oh-savn-TD1OuterMainHead span {
+    font-family: VWHead-Light;
+    font-weight: 300;
+}
+.vga-oh-savn-headDescp {
+  font-family: VWText-Regular;
+  width: 73%;
+  font-size: 20px;
+  color: #000000;
+  line-height: 28px;
+  margin-top: 30px;
+  margin-bottom: 54px;
+}
+.vga-oh-savn-headDescp span{
+  font-family: VWText-Bold;
+  font-size: 22px;
+}
+.welcome-bold{
+  font-family: VWText-Bold;
+}
+.vga-oh-savn-headDescp a{
+  color: #000;
+  text-decoration: underline;
+}
+.vga-oh-savan-choosemodelOuter {
+  padding: 0 60px;
+  padding-bottom: 1px;
+  /* padding: 0 75px; */
+	
+}
+.vga-oh-savn-TD-steperOuter p span {
+  border-bottom: 2px solid #dfe4e8;
+}
+.vga-oh-savn-TD-steperOuter p {
+  margin-bottom: 50px;
+  -ms-flex: 0 0 33.33%;
+/*   flex: 0 0 33.33%;
+  max-width: 33.33%; */
+  flex: 0 0 25%;
+  max-width: 25%;
+  border-bottom: 2px solid #dfe4e8;
+  padding-bottom: 10px;
+  font-family: VWText-Regular;
+  font-size: 14px;
+  color: #001e50;
+  padding-right: 5px;
+  line-height: 16px;
+}
+.vga-oh-savn-TD-steperOuter p span{
+  border-bottom: none;
+  margin-left: 10px;
+}
+.vga-oh-savn-TD-steperOuter p {
+  margin-left:0;
+}
+.vga-oh-savn-TD-steperOuter p.active {
+  border-bottom: 2px solid #001e50;
+  color: #001e50;
+}
+
+.vga-oh-savan-choosemodelOuter h3 {
+  color: #000000;
+  margin-bottom: 50px;
+  font-size: 32px;
+  line-height: 36px;
+}
+.vga-oh-savan-choosemodelOuter h3 span {
+  font-family: VWHead-Light;
+}
+.defaultBorderBlueBtn {
+  color: #001e50;
+  background-color: #ffffff;
+  border: 2px solid #001e50;
+  border-radius: 60px;
+  padding: 6px 40px;
+  cursor: pointer;
+  outline: none !important;
+  min-width: 148px;
+  height: 43px;
+}
+.defaultBorderBlueBtn:hover {
+  background-color: #ffffff;
+  outline: none !important;
+  border: 2px solid #0040c5;
+  padding: 6px 40px;
+  color: #0040c5;
+}
+.defaultBlueBtn {
+  font-family: VWText-Regular;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #001e50;
+  border: 2px solid #001e50;
+  border-radius: 60px;
+  padding: 6px 40px;
+  cursor: pointer;
+  min-width: 221px;
+  outline: none !important;
+  height: 43px;
+}
+.defaultBlueBtn:hover {
+  background-color: #0040c5;
+  outline: none !important;
+  border: 2px solid #0040c5;
+  padding: 6px 40px;
+}
+.carModeldummyImg {
+  display: block;
+  margin: 0 auto;
+  padding: 70px 0 70px 0;
+}
+.vga-oh-savn-modelListingMain {
+  background: linear-gradient(rgb(223, 228, 232) 80%, rgb(255, 255, 255) 40%);
+  margin-bottom: 50px;
+  text-align: center;
+}
+.vga-oh-savn-modelListingMain h4 {
+  font-family: VWHead-Bold;
+  font-size: 32px;
+  line-height: 36px;
+  padding:60px;
+  padding-top: 0 !important;
+  text-align: left;
+  color: #fff;
+  margin-top: 0;
+  font-weight: 300;
+}
+.vga-oh-savn-modelListingMain h4 span{
+  font-family: VWHead-Light;
+}
+span.confirm-vehicle-name {
+  font-family:VWHead-Bold !important;
+}
+
+/* ---------------------Resposive css------------------------------- */
+ @media (max-width: 991px) {
+ .vga-oh-savn-td-stepperBtnOuter1step {
+   /* text-align: center; */
+     margin-top: 60px;
+                  }
+.vga-oh-savn-td-custrowOut75px {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.vga-oh-savn-modelListingMain {
+  margin-bottom: 10px;
+}
+.vga-oh-savn-modelListingMain h4 {
+  font-size: 32px;
+  line-height: 40px;
+  padding: 30px 13px 0 30px;
+  margin-bottom: 60px;
+}
+.vga-oh-savan-choosemodelOuter {
+  padding: 0;
+}
+/*
+.vga-oh-savn-TD1OuterMainHead {
+  font-size: 30px;
+}
+*/
+.vga-oh-savn-headDescp {
+  font-size: 16px;
+  line-height: 24px;
+}
+.carModeldummyImg {
+  padding: 30px 0;
+}
+.vga-oh-savan-choosemodelOuter h3 {
+  font-size: 22px;
+}
+.vga-oh-savn-TD-steperOuter p {
+  margin-bottom: 40px;
+}
+.vga-oh-savan-choosemodelOuter h3 {
+  margin-bottom: 30px;
+}
+}
+
+@media (max-width: 768px) {
+ .vga-oh-savn-td-stepperBtnOuter1step .btn-primary.outlineBtnBtn{
+   float: left;
+ }
+}
+ @media (max-width: 560px) {
+   .vga-oh-savn-TD-steperOuter p.active dnmob {
+      display: none
+      }
+   }
+
+  @media (max-width: 375px) {
+   .vga-oh-savn-TD-steperOuter p {
+    font-size: 12px;
+  }
+.vga-oh-savn-td-stepperBtnOuter1step button {
+  min-width: 136px;
+  padding: 6px 30px;
+  font-size: 14px;
+}
+.mR10px {
+  margin-right: 0;
+}
+}
+/* ---------------------Resposive css------------------------------- */
+
+
+
+
+
+/*CSS test drive main step 1 choose model*/
+
+
+/*    privacy content section*/
+@media screen and (min-width:1416px){
+  .privacyCollection_minusMarg{
+    /* margin:0 -70px; */
+    padding: 5px 0;
+  }
+}
+
+.privacyCollection_minusMarg {
+  padding-top: 20px;
+  padding-bottom: 30px;
+/*  border-top: solid #cccccc 1px;*/
+}
+.privacyCollectionStattementSection {
+  margin: 0px 60px 0px 60px;
+}
+.privacyCollectionStattementSection hr {
+  margin-bottom: 1.5rem;
+  will-change: 100%;
+  max-width: 1590px;
+}
+.vga-oh-savn-privacyAccoHead .vga-oh-savn-privacyAccoToggleCls:before {
+  font-family: 'FontAwesome';
+  content: "\f106";
+  color: #2b2b2b;
+  font-size: 18px;
+  position: relative;
+  top: 0px;
+  padding-right: 10px;
+  transition: all 1s;
+  transition: 0.5s;
+}
+.vga-oh-savn-privacyAccoHead .vga-oh-savn-privacyAccoToggleCls.collapsed:before {
+  content: "\f107";
+  transition: 0.5s;
+}
+.vga-oh-savn-privacyAccoHead p a {
+  font-size: 14px;
+  color: #001e50;
+  position: relative;
+}
+.vga-oh-savn-PrivacyAccoBody {
+  font-size: 16px;
+  color: #000;
+  line-height: 24px;
+  font-family: VWText-Regular;
+  
+}
+.vga-oh-savn-PrivacyAccoBody a{
+	text-decoration: underline !important;
+}
+.vga-oh-savn-PrivacyAccoBody span{
+  margin-right: 10px;
+	float: left;
+}
+.vga-oh-savn-PrivacyAccoBody-inner{
+	width: auto;
+	height: auto;
+	float: left;
+	margin-left: 50px;
+}
+.vga-oh-savn-PrivacyAccoBody-inner-main{
+	width:100%;
+	height: auto;
+	float: left;
+}
+.vga-oh-savn-PrivacyAccoBody-inner p{
+	width: 90%;
+	height: auto;
+	float: left;
+	margin-bottom: 10px !important;
+	
+	
+}
+
+ @media (max-width: 767px) {
+}
+
+@media (max-width: 560px) {
+}
+/*    privacy content section*/
+
+
+
+
+
+
+/*CSS test drive main step 2 choose dealer*/
+.vga-oh-savn-td-choosedealerHeaderh3 {
+  margin-bottom: 20px !important;
+}
+.vga-oh-savn-td-choosedealerHeaderP {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 60px;
+}
+.defaultBorderLessBtnLeft {
+  color: #001e50;
+  background-color: #ffffff;
+  border: none;
+  padding: 6px 0px;
+  text-align: left;
+  cursor: pointer;
+  outline: none !important;
+  min-width: 70px;
+  outline: none;
+  margin-top:8px;
+}
+.defaultBorderLessBtnLeft:hover {
+  background-color: #ffffff;
+  color: #001e50
+}
+.vga-oh-savn-td-stepperBtnOuterStepper {
+  width: 100%;
+  position: relative;
+  display: block;
+  margin-top:10px;
+  margin-bottom:50px;
+  float: left;
+}
+.vga-oh-savn-td-stepperBtnOuterStepper .btn-primary:not(:disabled):not(.disabled):active {
+  color: #000; 
+  background-color:#fff;
+  border-color:#fff;
+}
+.vga-oh-savn-td-stepperBtnOuterStepper .btn-primary:focus {
+  box-shadow:none !important;
+}
+.vga-oh-savn-td-stepperBtnOuterStepper .defaultBorderLessBtnLeft img {
+  height: 20px;
+  padding-right: 8px;
+  margin-top:-2px;
+}
+.fRyt {
+  float: right;
+}
+.vga-oh-savn-td-choosedealerbefore label{
+  color: #001e50;
+    /* color: black; */
+  font-size: 14px;
+  line-height: 16px;
+}
+.vga-oh-savn-td-choosedealerbefore input{
+  border: none;
+  border-bottom: 1px solid #001e50;
+  border-radius: 0;padding: 5px 40px;font-size: 24px;
+  line-height: 36px;
+}
+.vga-oh-savn-td-dealerSearchIcn {
+    position: absolute;
+    top: 12px;
+}
+.vga-oh-savn-td-dealerLocIcn{
+  position: absolute;
+  top: 12px;
+  right: 0;
+}
+.vga-oh-savn-td-dealerInputValidateTxt{
+  color: #6a767d; font-size: 14px;line-height: 24px;
+}
+.vw_Oh_select_dlrship_info{
+  margin-bottom: 10px;
+  }
+.vw_Oh_select_dlrship_info p{
+  display: inline;
+  font-size: 14px;
+  color: black;
+  margin-bottom: 0;
+  }
+.vw_Oh_select_dlrship_info .info_dlr_prs{
+  position: relative;
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+  display: inline-block;
+  background: url(https://one-hub-assets.s3-ap-southeast-2.amazonaws.com/one-hub-dealer-callback/img/info.svg) no-repeat center;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.vw_OH_dlr_info__Box_outer{
+  position: absolute;
+  left: 100%;
+  top: -50%;
+  visibility:hidden;
+  opacity: 0;
+  transition: all 0.3s;
+  transform: translate(20px, -15px);
+  z-index: 9;
+  }
+.info_dlr_prs:hover .vw_OH_dlr_info__Box_outer{
+  visibility:visible;
+  opacity: 1;
+  }
+.vw_OH_dlr_info__Box{
+  padding: 15px;
+  width: 230px;
+  position: relative;
+  border:1px solid var(--OH_gray);
+  background: #fff;
+  }
+.vw_OH_dlr_info__Box p{
+  line-height: 17px;
+  color: #333;
+  }
+.vw_OH_dlr_info__Box:after{
+    width: 20px;
+    height: 20px;
+    content: '';
+    position: absolute;
+    right:100%;
+    top: 50%;
+    margin-right: -10px;
+    border:1px solid  var(--OH_gray);
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-radius: 2px;
+    transform: translate(0%,-50%) rotate(45deg);
+    background-color: #fff;
+  }
+
+@media (max-width: 560px) {
+  .vga-oh-savn-td-stepperBtnOuterStepper button {
+    font-size: 14px;
+  }
+  .vw_OH_dlr_info__Box{
+    width: 140px;
+    padding: 8px;
+  }
+  .vw_OH_dlr_info__Box span{
+    font-size: 13px;
+    position: relative;
+    z-index: 9;
+  }
+}
+/*CSS test drive main step 2 choose dealer*/
+
+/*    models popup*/
+.modal-content .vga-oh-savn-TD1OuterMainHead {
+ margin-bottom: 50px;
+ margin-top: 0;
+}
+.vga-oh-savan-modelsPopupOuter {
+  max-width: 95%;
+  margin-bottom: 120px;
+  margin-top: 60px;
+}
+.vga-oh-savan-modelsPopupOuter .modal-content {
+  padding: 50px 60px;
+}
+.vga-oh-savan-modelsPopupOuter .modal-content .modal-body {
+  padding: 0;
+}
+.vga-oh-savn-4w2mLayout {
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 0 30px;
+}
+.vga-oh-savn-modelPopupListing {
+  cursor: pointer;
+  background: linear-gradient(rgb(223, 228, 232) 80%, rgb(255, 255, 255) 40%);
+  margin-bottom: 50px;
+
+  text-align: center;
+}
+.vga-oh-savn-ModelpopupCustRow {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -40px;
+  margin-left: -40px;
+}
+.vga-oh-savn-modelPopupListing p {
+text-align: left;
+
+  margin-bottom: 0;
+  padding: 20px 15px;
+  font-family: VWText-Bold;
+  font-size: 20px;
+  line-height: 24px;
+}
+.vga-oh-savn-modalpopupCloseBtn {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+  position: absolute;
+  bottom: -70px;
+  margin-bottom: 10px;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  color: #001e50;
+  border-radius: 60px;
+  padding: 4px 25px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
+}
+.vga-oh-savn-modalpopupCloseBtn:hover {
+  background-color: #0040c5;
+  color: #ffffff;
+}
+.vga-oh-savn-modalpopupCloseBtn svg {
+  position: relative;
+  top: 3px;
+  left: -3px;
+}
+.vga-oh-savn-modalpopupCloseBtn span {
+  position: relative;
+  top: -3px;
+  left: 5px;
+}
+
+@media (max-width: 1024px) {
+  .vga-oh-savn-4w2mLayout {
+   -ms-flex: 0 0 33.33%;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 30px;
+ }
+.vga-oh-common-containerOuterMain {
+  padding-top: 100px;
+}
+.vga-oh-savan-modelsPopupOuter {
+  margin-top: 100px;
+}
+}
+
+ @media (max-width: 991px) {
+ .vga-oh-savn-4w2mLayout {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 30px;
+    }
+/*
+	.vga-oh-savn-TD1OuterMainHead {
+	  font-size: 32px;
+	  line-height: 36px;
+	}
+*/
+	 .pd-lr-md-0{
+		 padding-left: 0 !important;
+		 padding-right: 0 !important;
+	 }
+}
+
+
+
+
+
+@media (max-width: 560px) {
+  .vga-oh-savn-4w2mLayout {
+    padding: 0 15px;
+  }
+.vga-oh-savan-modelsPopupOuter .modal-content h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.vga-oh-savan-modelsPopupOuter .modal-content {
+  padding: 40px 16px 0px 16px;
+}
+.vga-oh-savn-modelPopupListing p {
+  padding: 9px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.vga-oh-savn-ModelpopupCustRow {
+  margin-right: -30px;
+  margin-left: -30px;
+}
+.vga-oh-savn-modalpopupCloseBtn {
+  bottom: -55px;
+  padding: 0 30px;
+  border: 1px solid transparent;
+}
+.vga-oh-savan-modelsPopupOuter {
+  margin-top: 70px;
+  margin-bottom: 90px;
+}
+.vga-oh-savn-modalpopupCloseBtn svg{
+width: 17px;
+}
+
+}
+/*    models popup*/
+
+
+.content {
+  max-width: 1200px;
+}
+
+.content .demo {
+  border: 1px solid #CCC;
+}
+
+.content .demo .inner-content {
+  border: 1px solid #CCC;
+  max-height: 170px;
+  width: 600px;
+}
+
+.content .demo > div {
+  max-height: 250px;
+  overflow: auto;
+}
+.content .demo .permanent {
+  min-width: 800px;
+}
+.controls {
+  padding: 0 0 10px;
+}
+.controls span {
+  cursor: pointer; padding: 2px 8px;
+}
+.controls span.active {
+  background: #4698CE;
+  color: #fff;
+  cursor: default;
+}
+.prettyprint ol.linenums > li {
+  list-style-type: decimal;
+}
+#lorem-ipsum {
+  display: none;
+}
+
+
+/* oneHub checkbox */
+.OH_checkBox {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+user-select: none;
+
+cursor: pointer;
+}
+
+/* Hide the browser's default checkbox */
+.OH_checkBox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.OH_checkBox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+/*  border:1px solid var(--OH_blue);*/
+	border:solid #ccc 1px;
+/*  box-shadow: 0px 0px 1px 1px rgba(0,30,80,0.25) inset;*/
+/*	box-shadow: 0px 0px 1px 1px rgba(255,0,0) inset;*/
+	
+}
+
+
+/* On mouse-over, add a grey background color */
+.OH_checkBox:hover input ~ .checkmark {
+  background-color: #fff;
+}
+
+/* When the checkbox is checked, add a blue background */
+
+.OH_checkBox input:checked ~ .checkmark {
+  color: white;
+  background-color: #fff;
+	border:solid #001e50 1px !important;
+  }
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.OH_checkBox .checkmark:after {
+  content: "";
+  position: absolute;
+/* display: none; */
+visibility: hidden;
+opacity: 0;
+transition: all 0.3s;
+-webkit-transition: all 0.3s;
+}
+
+/* Show the checkmark when checked */
+.OH_checkBox input:checked ~ .checkmark:after {
+  /* display: block; */
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Style the checkmark/indicator */
+.OH_checkBox .checkmark:after {
+  left: 9px;
+  top: 3px;
+  width: 6px;
+  height: 16px;
+  border: solid var(--OH_blue);
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  font-weight: lighter;
+  }
+/* oneHub checkbox */
+
+
+/* onehub custom radio */
+.OH_customRadio {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.OH_customRadio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.OH_customRadio .checkmark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  border-radius: 50%;
+  border:2px solid var(--OH_blue);
+}
+
+/* On mouse-over, add a grey background color */
+.OH_customRadio:hover input ~ .checkmark {
+  /*background-color: #ccc;*/
+}
+
+/* When the radio button is checked, add a blue background */
+.OH_customRadio input:checked ~ .checkmark {
+  background-color: #fff;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.OH_customRadio .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.OH_customRadio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.OH_customRadio .checkmark:after {
+     top: 4px;
+    left: 4px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: var(--OH_blue);
+}
+/* onehub custom radio */
+
+
+.vw-stock-stnot__enq{
+  margin-bottom: 50px;
+}
+.OH_checkBox__outer{
+  margin-bottom: 20px;
+}
+.OH_checkBox__outer:last-child{
+  margin-bottom: 0;
+}
+.VH_span_nature{
+  font-size: 12px;
+  margin-bottom:20px;
+}
+button.mediumGrayBtn{
+  font-size: 16px;
+  color: var(--OH_medium_gray);
+  background: var(--OH_gray);
+  border-color:var(--OH_gray);
+}
+button.mediumGrayBtn:hover{
+  opacity:0.90;
+  color: var(--OH_medium_gray);
+  background: var(--OH_gray);
+  border-color:var(--OH_gray);
+}
+.dlr-call_qst_title{
+  margin-bottom: 20px;
+}
+.dlr-call_qst_title h3{
+  font-size: 32px;
+  color: var(--OH_black);
+  font-family: VWHead-Bold;
+  font-weight: bold;
+  margin: 0 0 15px 0px;
+  padding-left: 60px;
+}
+#callbackForm.dlr-call_qst_title h3{
+  padding-left: 0px;
+}
+.dlr-call_qst_title h3 span{
+  font-family: VWHead-Light;
+  font-weight:200;
+}
+.OH_required_text{
+  color: var(--OH_medium_gray);
+  /* padding: 0 55px; */
+}
+.vhBack_spacing{
+margin-bottom: 20px;
+}
+.vh-backBtn a {
+  font-size: 14px;
+  color: var(--OH_blue);
+}
+.vh-backBtn a img {
+  width: 22px;
+  margin-right: 10px;
+}
+.vw-OH_callback_prs_comment{
+  margin-bottom: 60px;
+}
+.vw-OH_callback_prs_comment textarea{
+  width: 100%;
+  height: 30px;
+  border:none;
+  border-bottom: 1px solid var(--OH_gray);
+}
+.magnifierPlusIco{
+  padding-left: 30px;
+}
+.magnifierPlusIco:after{
+  content:'';
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: url( f) no-repeat center;
+}
+
+/* auto complete postcode */
+.autocomplete{
+position: relative;
+}
+.ajaxSpinner {
+color: #001e50;
+position: absolute;
+right: 0;
+background-color: #fff;
+border-radius: 100px;
+z-index: 99;
+top: 12px;
+}
+.ajaxSpinnerStep3{
+    color: #ffffff;
+    position: absolute;
+    right: 33px;
+    /* background-color: #fff; */
+    border-radius: 100px;
+    z-index: 10;
+    top: 15px;
+}
+.list-group-item {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+.autocomplete-items{
+  padding-top: 0px;
+  margin-top: -10px;
+}
+.autocomplete-items div {
+  font-size: 20px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.autocomplete-items div:hover{
+  opacity: 0.5;
+}
+.autocomplete_space_btm{
+  margin-bottom: 40px;
+}
+/* auto complete postcode */
+
+/* dealer callback step 3 */
+
+.vw-OH_dealer_form_prs_wrapper{
+  /*padding: 50px 35px;*/
+  /*border:2px solid var(--OH_blue);
+  margin-bottom: 50px;*/
+}
+@media screen and (min-width:1000px){
+  ._inner_vw-OH_dealer_form_prs_wrapper {
+       margin-left: 60px;
+  }  
+}
+._inner_vw-OH_dealer_form_prs_wrapper {
+  margin-left: 60px;
+}
+.form-_vw-OH_dealer_prs_group{
+  margin-bottom: 30px;
+ /* padding: 0 20px;*/
+}
+._inner_vw-OH_dealer_form_prs_child{
+  margin-bottom: 10px;
+}
+._inner_vw-OH_dealer_form_prs_child i.ajaxSpinner{
+  right:35px;
+  top:30px !important;
+font-size:17px !important;
+}
+.form-_vw-OH_dealer_prs_group input{
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding-bottom: 7px;
+  border-bottom: 1px solid var(--OH_gray);
+}
+.vw-dealer_callback_timeTocall{
+  padding: 0 20px;
+}
+.dealer_callback_timeTocall label.pref{
+  margin-bottom: 10px;
+}
+/*
+.vw-OH_dealer_form_prs_wrapper .OH_checkBox__outer{
+  margin-right: 30px;
+}
+*/
+.vw-dealer_subscribe_prs label{
+  font-size: 14px;
+}
+.vw-dealer_subscribe_prs label a{
+  text-decoration: underline;
+}
+
+.vw-dealer_subscribe_prs{
+  padding-top: 10px;
+}
+.rqed_FLds_padd{
+  padding-left: 60px;
+}
+
+
+/* OneHub DEALER LIST Colllapse section */
+
+.vw_Oh_select_dlrship_main_wrapper{
+  margin-bottom: 50px;
+}
+.vw_Oh_select_dlrship_List_accordian .panel{
+  border-bottom: 1px solid var(--OH_gray);
+	position: relative;
+  
+}
+.vw_Oh_select_dlrship_List_accordian .panel-title .accordion-toggle{
+  position: relative;
+  cursor: pointer;
+  display: block;
+  /* float: left; */
+  font-size: 20px;
+  color: var(--OH_blue);
+  /* padding: 25px 0; */
+  font-family: VWHead-Bold;
+}
+.vw_Oh_select_dlrship_List_accordian .accordion-toggle.collapsed{
+  font-family: VWHead-regular;
+}
+
+.vw_Oh_select_dlrship_List_accordian .panel-title .accordion-toggle:after{
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 36px;
+  width: 20px;
+  height: 20px;
+/*  background: url(https://one-hub-assets.s3-ap-southeast-2.amazonaws.com/one-hub-dealer-callback/img/chevron-down.svg) no-repeat center / contain;*/
+   transform: rotate(180deg);
+  /* transition: all 0.2s; */
+}
+.vw_Oh_select_dlrship_List_accordian .accordion-toggle.collapsed:after{
+  transform: rotate(360deg);
+}
+.vw_Oh_select_dlrship_List_accordian .panel-body{
+  /* padding-top:15px; */
+  padding-left: 35px;
+  padding-bottom: 30px;
+}
+.vw_OH_panel_head_bold .OH_customRadio{
+  float: left;
+  display: block;
+  font-family: VWText-Bold;
+  font-size: 20px;
+  line-height: 20px;
+  width: 100%;
+  /* height: 24px; */
+  padding: 0 35px 0 35px;
+  position: relative;
+  /* top: 5px; */
+  z-index: 0;
+  margin-top: 25px;	
+}
+.vw_OH_panel_head_bold .OH_customRadio span{
+	font-family: VWText-Regular !important;
+}
+.vw_OH_panel_head_bold .OH_customRadio .checkmark{
+top: 15px;
+}
+.__acco_dealer_list_body  p{
+  font-size: 16px;
+  color: #00186b;
+  margin-bottom: 8px;
+}
+.__acco_dealer_list_body a.view_map{
+  border-bottom: 1px solid ;
+}
+.view_map{
+  font-family: VWHead-Bold;
+  color: var(--OH_blue);
+  font-size: 14px;
+  padding-right: 30px;
+  background: url(https://one-hub-assets.s3-ap-southeast-2.amazonaws.com/one-hub-dealer-callback/img/arrow-right-small.svg) no-repeat center right;
+}
+/* OneHub DEALER LIST Colllapse section */
+
+/* dealer callback step 3 */
+
+
+/* thank you page */
+.vga-oh-sdk-testdrive-confirmation-carousel-head {
+width: 100%;
+height: auto;
+font-family: VWHead-Bold;
+color: #000;
+font-size: 48px;
+line-height: 56px;
+}
+.vga-oh-sdk-testdrive-confirmation-carousel-head span {
+font-family: VWHead-Light;
+}
+
+@media (max-width: 767px){
+  .vga-oh-sdk-testdrive-confirmation-carousel-head {
+    font-size: 32px;
+    line-height: 36px !important;
+  }
+}
+
+.vga-oh-sdk-testdrive-confirmation-carousel-bottom {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.vga-oh-sdk-testdrive-confirmation-carousel-bottom .item{
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+.vga-oh-sdk-testdrive-confirmation-carousel-bottom .owl-item.active .item{
+  opacity: 1;
+}
+.vga-oh-sdk-testdrive-confirmation-carousel-content{
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+.vga-oh-sdk-testdrive-confirmation-carousel-content-head{
+  width: 100%;
+  height: auto;
+  font-family: VWHead-Bold;
+  font-size: 24px;
+  color: black;
+}
+.vga-oh-sdk-testdrive-confirmation-carousel-content-head-bold{
+  font-family: VWHead-Bold !important;
+  font-size: 32px;
+}
+.vga-oh-sdk-testdrive-confirmation-carousel-content-head span{
+  font-family: VWHead-Light;
+  font-weight: normal;
+}
+.vga-oh-sdk-testdrive-confirmation-carousel-text{
+  width: 100%;
+  height: auto;
+  font-family: VWText-Regular;
+  font-size: 20px;
+  color: #000;
+  margin-top: 10px;
+  font-weight: normal;
+}
+
+.vga-oh-sdk-testdrive-confirmation-carousel-link{
+  width: auto;
+  height: auto;
+  float: left;
+  color: #001e50;
+  font-family: VWText-Bold;
+  font-size: 24px;
+  margin-top: 10px;
+  border-bottom: solid #001e50 1px;
+}
+.vga-oh-sdk-testdrive-confirmation-carousel-link a{
+color: #001e50;
+}
+.vga-oh-sdk-testdrive-confirmation-carousel-link img{
+  width: 20px !important;
+  float: right;
+  margin:12px 0 0 10px;
+}
+@media (max-width: 991px){
+ .owl-carousel .owl-stage-outer {
+  margin-left: -50px;
+ }
+	.vga-oh-sdk-depositor-dealer-confirm-bottom{
+		margin-top:80px;
+		}
+	.mt-lg-0{
+		margin-top: 0 !important;
+		}
+}
+
+@media (max-width: 499px) {
+  .owl-carousel .owl-stage-outer {
+    margin-left: -25px;
+     }
+}
+
+/* thank you page */
+
+
+
+/*footer*/
+.p0 {
+  padding: 0 !important;
+}
+.vwfs-Block41 {
+  padding: 0 15px;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.vwfs-footer-savn1 {
+  border-top: 2px solid #001e50;
+  margin: 0 60px;
+  padding: 100px 55px 55px 100px;
+  margin-top: 50px;
+}
+.vwfs-footer-ul {
+  padding: 0;
+  list-style: none;
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+.vwfs-footer-ul li {
+  padding-bottom: 17px;
+  font-size: 16px;
+  line-height: 24px;
+}
+.vwfs-footer-ul li a {
+  color: var(--OH_blue);
+}
+.vwfs-footer-ul span {
+  font-family: VWHead-Bold;
+  display: block;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bold;
+  margin-bottom: 26px;
+  color: #000000;
+}
+.vwfs-footer-ul li a:hover {
+  color: #0040c5;
+}
+.vwfs-footer-finalLinks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+}
+.vwfs-footer-finalLinks li {
+  display: flex;
+  float: left;
+}
+.vwfs-footer-finalLinks li a {
+  color: #001e50;
+}
+.vwfs-footer-finalLinks li a:hover {
+  color: #0040c5;
+}
+.vwfs-footer-finalLinks li span {
+  padding: 0 10px;
+}
+.vwfs-footercopyrighttext {
+  position: absolute;
+  right: 60px;
+  font-size: 16px;
+  margin-top: 0px;
+  line-height: 24px;
+}
+.vwfs-footer-hr {
+  border: 0;
+  border-top: 2px solid rgba(0,0,0,.1);
+  margin: 0 60px;
+  margin-bottom: 100px !important;
+}
+
+.vga-oh-sdk-chooseadealer-time .ajaxSpinner{
+right: 0 !important;
+}
+
+.vga-oh-sdk-chooseadealer-timefeald .ajaxSpinner{
+bottom: 0 !important;
+width: 25px !important;
+height: 25px !important;
+margin-top: 0 !important;
+}
+
+.vga-oh-sdk-depositor-payment-box{
+	border:solid #001e50 1.5px !important;
+	padding: 30px !important;
+}
+.pdl-0{
+	padding-left: 0 !important;
+		
+}
+.vga-oh-sdk-depositor-depositblock-top-ic{
+    float: initial !important;
+	font-family: VWText-Regular ;
+	font-size: 17px;
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+.vwfs-footer-savn1 {
+  padding: 100px 20px 55px 20px;
+}
+.vwfs-footer-ul span {
+  font-size: 20px;
+  line-height: 24px;
+}
+.vwfs-footer-ul li {
+  padding-bottom: 16px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.vwfs-footer-finalLinks li {
+  font-size: 14px;
+  line-height: 20px;
+}
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+	.vga-oh-sdk-depositor-dealer-confirm-lefthead{
+		padding: 0 20px !important; 
+	
+	}
+}
+
+@media (max-width: 991px){
+	.padd-lg-md{
+		padding:0 !important;
+	}
+}
+
+@media (max-width: 767px) {
+.vwfs-footercopyrighttext {
+  right: auto;
+  margin-top: 20px;
+  display: block;
+  left: 0;
+}
+.vwfs-footer-finalLinks {
+  margin-bottom: 30px;
+}
+.pMob0 {
+  padding: 0;
+}
+.vwfs-Block41 {
+  padding: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.vwfs-footer-savn1 {
+  padding: 40px 20px 55px 20px;
+  margin: 0 35px;
+  margin-top: 45px;
+}
+.vwfs-footer-hr {
+  margin: 0 35px;
+}
+
+/*------depositer 767 start------*/
+
+.vga-oh-savn-headDescp{
+  width: 100%;
+}
+.vga-oh-savn-TD1Outer{
+  padding: 0 !important;
+}
+.vga-oh-savn-TD-steperOuter p span{
+  display: none;
+}
+
+.vga-oh-sdk-depositor-mid-main{
+  padding: 0 !important;
+}
+	
+	.vga-oh-sdk-error-inner{
+		width:100%;
+		
+	}
+
+/*------depositer 767 end------*/
+	
+
+}
+
+
+
+@media (min-width: 600px) {
+  .lg-none{
+    display: none !important;
+  }
+	
+}
+
+
+
+@media (max-width: 600px) {
+  .wi-sm-100{
+    width: 100% !important;
+    text-align: center;
+  }
+  .ml-sm-0{
+    margin-left: 0 !important;
+  }
+  .mt-sm-10{
+    margin-top: 35px !important;
+  }
+  .ml-s-0{
+    margin-left: 0;
+  }
+  .vga-oh-sdk-depositor-dealer-confirm-lefthead{
+    font-size: 20px;
+  }
+  .vga-oh-sdk-depositor-dealer-confirm-bottom-main{
+    padding-left: 20px !important;
+  }
+  .vga-oh-sdk-depositor-dealer-confirm-bottom ul li{
+    position: relative;
+  }
+  .vga-oh-sdk-depositor-dealer-confirm-bottom-main-change{
+    position: absolute;
+    top: 40px;
+    right: 0;
+  }
+  .vga-oh-sdk-depositor-dealer-confirm-bottom-head{
+    font-size: 20px !important;
+  }
+  .vga-oh-sdk-depositor-dealer-confirm-bottom-main-mid-head{
+    font-size: 16px !important;
+  }
+  .sm-none{
+    display: none !important;
+  }
+  .vga-oh-sdk-depositor-dealer-inner{
+    padding: 0 !important;
+   }
+	.vga-oh-sdk-depositor-dealer-confirm-lefthead{
+		font-size: 20px !important;
+	}
+	.vga-oh-sdk-depositor-depositblock{
+		padding:20px;
+	}
+	.ml-sm-0{
+		padding-left: 0 !important;
+	}
+	.vga-oh-sdk-depositor-dealer-confirm-bottom-main-mid {
+    width: 85% !important;
+	
+	}
+	.padd-lr-6h{
+		/*padding-left: 14px !important;
+		padding-right: 14px !important;*/
+		
+	}
+	
+	.vga-oh-savn-td-choosedealerbefore ::-webkit-input-placeholder {
+	  font-size: 16px !important;
+	}
+
+	.vga-oh-savn-td-choosedealerbefore :-ms-input-placeholder { 
+	  font-size: 16px !important;
+	}
+
+	.vga-oh-savn-td-choosedealerbefore ::placeholder {
+	  font-size: 16px !important;
+	}
+	.vga-oh-sdk-depositor-payment-box{
+		padding:20px !important;
+	}
+	.vga-oh-sdk-depositor-depositblock{
+		margin-bottom:20px !important;
+	}
+	.vga-oh-sdk-depositor-depositblock {
+		padding: 20px !important;
+	}
+	
+	.vga-oh-savn-PrivacyAccoBody-inner {
+    margin-left: 25px !important;
+	}
+	.vga-oh-sdk-depositor-mid-last-left {
+		font-size: 16px!important;
+	}
+
+	
+}
+
+
+
+
+
+
+@media (min-width: 480px) {
+.brnone{
+	display: none !important;
+	}
+}
+
+
+ @media screen and (max-width:1300px){
+  .vga-oh-savn-td-custrowOut75px{
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+ }
+
+
+
+/* genaral media query css */
+ @media screen and (max-width:768px){
+  
+  .container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+      .vga-oh-common-containerOuterMain{
+          padding-top: 80px;
+      }
+      .vga-oh-savn-TD1Outer{
+        padding: 0 5px;
+      }
+      .OH_required_text{
+        padding: 0;
+      }
+      .OH_required_text,
+      .vga-oh-savn-td-dealerInputValidateTxt{
+        margin-top: 30px;
+        font-size: 12px;
+      }
+      .vw_Oh_select_dlrship_List_accordian .panel-title a:after {
+        width: 24px;
+        height: 24px;
+        top: 22px;
+      }
+      .vw_Oh_select_dlrship_List_accordian .panel{
+        border-width: 2px;
+      }
+      .vga-oh-savn-td-dealerLocIcn {
+        /* top: -35px; */
+    }
+    .privacyCollectionStattementSection{
+      margin:20px 40px
+    }
+
+    .rqed_FLds_padd{
+      padding-left:0;
+    }
+    .vga-oh-savn-td-stepperBtnOuterStepper {
+      position: relative;
+      margin-top: 20px;
+      margin-bottom: 30px;
+  }
+  .vga-oh-savn-td-choosedealerHeaderP{
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .dlr-call_qst_title h3{
+    padding-left:0;
+  }
+
+    /* dealer callback third step */
+
+    .p-sm-lr-20{
+      padding: 0 20px !important;
+    }
+    /*.pd-lr-sm-0{
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }*/
+    .vga-oh-sdk-depositor-dealer-confirm-lefthead{
+      padding: 0 60px;
+    }
+	 
+	 .padd-lr-sm-10{
+		 padding-left: 0 !important;
+		 padding-right: 0 !important;
+		 
+	 }
+
+    
+ }
+
+
+ @media screen and (max-width:500px){
+   .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .privacyCollection_minusMarg {
+    padding-top: 0;
+    padding-bottom: 1px;
+  }
+  .privacyCollectionStattementSection hr {
+    margin-bottom: 1rem;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+  .vga-oh-savn-TD-steperOuter p span {
+    display:none;
+}
+._inner_vw-OH_dealer_form_prs_wrapper{
+  margin-left: 0;
+}
+._inner_vw-OH_dealer_form_prs_child {
+ /* padding-right: 50px;*/
+  padding-right: 0;
+}
+.vw-dealer_subscribe_prs label {
+/*  padding-right: 10px;*/
+  line-height: 16px;
+}
+.privacyCollectionStattementSection {
+  margin: 20px 10px;
+}
+
+
+  .dlr-call_qst_title{
+    margin-bottom: 0px;
+  }
+  .dlr-call_qst_title h3{
+    font-size: 24px;
+    line-height: 36px;
+    /* margin: 0 0 0px 0px; */
+  }
+  .vga-oh-savn-td-stepperBtnOuter1step {
+    text-align: right;
+    margin-bottom: 30px;
+  }
+  .vga-oh-savn-headDescp {
+    margin-bottom: 50px;
+     margin-top: 10px;
+  }
+  .dealer_Outer_oh_step2{
+    padding: 0 10px;
+  }
+  .vga-oh-savn-td-choosedealerbefore input{
+    color: var(--OH_blue);
+    font-size: 20px;
+    padding: 5px 30px;;
+  }
+  .vga-oh-savn-td-dealerSearchIcn {
+    position: absolute;
+    top: 12px;
+  }
+  .autocomplete-items div{
+    font-size: 18px;
+  }
+  .vw_Oh_select_dlrship_List_accordian .panel-title a{
+    font-size: 16px;
+    padding: 20px 0;
+  }
+  .vw_OH_panel_head_bold .OH_customRadio{
+    /* top: 20px; */
+    font-size: 16px;
+    padding: 0 35px 0 35px;
+  }
+  .vga-oh-savn-td-choosedealerbefore label{
+    /* color: black; */
+  }
+  .vw_OH_panel_head_bold .OH_customRadio .checkmark {
+    top: 10px;
+}
+.vw_Oh_select_dlrship_List_accordian .panel-title .accordion-toggle:after{
+  top: 28px;
+}
+
+  /* dealer callback third step */
+   .vw-OH_dealer_form_prs_wrapper{
+    width:100%;
+    padding: 40px 13px;
+    padding-top:0;
+    border-width: 2px;
+    border-right-color: transparent;
+     margin-bottom: 0;
+    }
+
+    /* margin-left: -25px; */
+    
+
+  .dealer_Outer_oh_step3{
+    padding: 0 10px;
+  }
+/*
+  .vw-OH_dealer_form_prs_wrapper .OH_checkBox__outer{
+    margin-right: 20px;
+  }
+*/
+  .vw-dealer_callback_timeTocall label{
+    margin-bottom: 10px;
+  }
+  .OH_checkBox{
+    padding-left: 35px;
+  }
+  .vw-dealer_subscribe_prs .OH_checkBox .checkmark{
+    top: 2px;
+	
+  }
+  .checkmark-two{
+    top: -5px !important;
+	
+  }
+   .padd-lr-0-xs{
+      padding-left:0 !important;
+	  padding-right: 0 !important;
+		 
+	 }
+  .vga-oh-sdk-depositor-dealer-certified {
+    top: 45px !important;
+	}
+  /* dealer callback third step */
+
+ }
+/* genaral media query css */
+
+
+.box{
+  width: 100%;
+  height: 500px;
+  background-color: aqua;
+  float: left;
+}
+
+.w-100{
+  max-width: 100% !important;
+  width: 100% !important;
+  padding: 0 !important;
+}
+.vga-oh-sdk-depositor-midblock{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-bottom: 30px;
+}
+.vga-oh-sdk-depositor-mid-main{
+  width: 100%;
+  height: auto;
+  float: left;
+  padding: 0 60px;
+}
+.vga-oh-sdk-depositor-mid-inner{
+  width: 100%;
+  height: auto;
+  float: left;
+  border-bottom: solid #000 0.5px;
+  padding: 27px 0 22px 0;
+  line-height: 32px;
+}
+
+.vga-oh-sdk-depositor-mid-left{
+  width: 45px;
+  height: 45px;
+  float: left;
+}
+.vga-oh-sdk-depositor-mid-left-img{
+  width: 100%;
+  height: auto;
+  float: left;
+  text-align: center;
+  line-height:30px;
+}
+.vga-oh-sdk-depositor-mid-left-img img {
+  width: 24px;
+  height: 24px;
+}
+.vga-oh-sdk-depositor-mid-color{
+  width: 45px;
+  height: 45px;
+  float: left;
+}
+.vga-oh-sdk-depositor-mid-color img{
+  border-radius: 50%;
+}
+.vga-oh-sdk-depositor-mid-text{
+  width: 55%;
+  height: auto;
+  float: left;
+  margin: 5px 0 0 20px;
+  font-family: VWText-Bold;
+  color: #000;
+  font-size: 16px;
+  line-height:32px;
+}
+.vga-oh-sdk-depositor-mid-text span{
+  font-family: VWText-Light;
+}
+.vga-oh-sdk-depositor-mid-right{
+  width: auto;
+  height: auto;
+  float: right;
+  margin: 3px 0 0 0;
+  font-family: VWText-Bold;
+  color: #000;
+  font-size: 12px;
+  text-align: right;
+  line-height:32px;
+}
+.vga-oh-sdk-depositor-mid-bottom{
+  width: 100%;
+  height: auto;
+  float: left;
+  padding-left: 45px;
+}
+.vga-oh-sdk-depositor-mid-text-bottom{
+  width: 65%;
+  height: auto;
+  float: left;
+  margin: 10px 0 0 20px;
+  font-family: VWText-Regular;
+  color: #001e50;
+  font-size: 16px;
+}
+.vga-oh-sdk-depositor-mid-last{
+  width: 100%;
+  height: auto;
+  float: left;
+  border-top: solid #000 0.5px;
+  padding: 25px 0;
+  margin-bottom: 28px;
+  position: relative;
+}
+.vga-oh-sdk-depositor-mid-last-left{
+  width: auto;
+  height: auto;
+  float: left;
+  font-family: VWText-Bold;
+  color: #000;
+  font-size: 20px;
+  line-height: 32px;
+}
+.vga-oh-sdk-depositor-mid-last-left span{
+	font-family: VWText-Bold;
+}
+.vga-oh-sdk-depositor-mid-last-right{
+  width: auto;
+  height: auto;
+  float: right;
+  font-family: VWText-Bold;
+  color: #000;
+  font-size: 20px;
+  position: relative;
+  line-height: 32px;
+}
+.vga-oh-sdk-depositor-mid-last-inc{
+  width: 100%;
+  float: left;
+  text-align: right;
+   font-family: VWText-Regular;
+  font-size: 12px;
+  display: block;
+  padding-right: 10px;
+}
+
+.defaultwtBtn {
+  font-family: VWText-Regular;
+  font-size: 16px;
+  color: #001e50;
+  background-color: #fff;
+  border: 2px solid #001e50;
+  border-radius: 60px;
+  padding: 6px 40px;
+  cursor: pointer;
+  min-width: 221px;
+  outline: none !important;
+  height: 44px;
+}
+.defaultwtBtn:hover {
+  background-color: #0040c5;
+  outline: none !important;
+  border: 2px solid #0040c5;
+  padding: 6px 40px;
+}
+.vga-oh-sdk-depositor-priv{
+  width: 100%;
+  height: auto;
+  float: left;
+  border-top: solid #cccccc 1px; 
+  font-family: VWText-Regular;
+  font-size: 12px;
+  color: #b6b6b6;
+  line-height: 16px;
+  padding-top: 0;
+  margin-top: 0;
+	margin-bottom:15px;
+}
+.vga-oh-sdk-depositor-priv a{
+	text-decoration: underline !important;
+	
+}
+.vga-oh-sdk-depositor-priv a:hover{
+	color: #001e50 !important;
+	
+}
+.priv_pad{
+  padding: 0 60px; 
+  }
+.p-0{
+  padding: 0 !important;
+}
+.vga-oh-sdk-depositor-dealer-inner{
+  width: 100%;
+  height: auto;
+  float: left;
+  padding:0 35px;
+}
+.vga-oh-sdk-depositor-dealer-inner ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: normal;
+}
+.vga-oh-sdk-depositor-dealer-inner ul li{
+  width: 100%;
+  height: auto;
+  display: block;
+  float: left;
+  border-bottom: solid #e7e7e7 1px;
+  padding: 25px 0;
+  position: relative;
+}
+
+.vga-oh-sdk-depositor-dealer-inner ul li:last-child{
+  border: 0 !important;
+}
+
+
+/*----check--------*/
+.vga-oh-sdk-depositor-dealer-inner ul li input[type=radio]{
+  position: absolute;
+  visibility: hidden;
+}
+
+.vga-oh-sdk-depositor-dealer-inner ul li label{
+  display: block;
+  position: relative;
+  font-family: VWHead-Bold;
+  font-size: 20px;
+  line-height: 15px;
+  height: auto;
+  z-index: 1;
+  cursor: pointer;
+  -webkit-transition: all 0.25s linear;
+  padding-left: 35px;
+}
+.vga-oh-sdk-depositor-dealer-inner ul li label span{
+  font-family: VWHead-regular;
+}
+
+
+.vga-oh-sdk-depositor-dealer-inner ul li .check{
+  display: block;
+  position: absolute;
+  border: 2px solid #001e50;
+  border-radius: 100%;
+  height: 25px;
+  width: 25px;
+  top: 20px;
+  right: 0;
+  z-index: 0;
+  transition: border .25s linear;
+  -webkit-transition: border .25s linear;
+  transition: 0.5s;
+}
+
+
+.vga-oh-sdk-depositor-dealer-inner ul li .check::before {
+  display: block;
+  position: absolute;
+  content: '';
+  border-radius: 100%;
+  height: 15px;
+  width: 15px;
+  top: 3px;
+  left: 3px;
+  margin: auto;
+  transition: background 0.25s linear;
+  -webkit-transition: background 0.25s linear;
+  transition: 0.5s;
+}
+
+@-moz-document url-prefix()  {
+    .vga-oh-sdk-depositor-dealer-inner ul li .check::before {
+    top: 3.5px;
+      left: 3.5px;
+    }         
+  }
+
+
+
+.vga-oh-sdk-depositor-dealer-inner ul li input[type=radio]:checked ~ .check {
+  border: 2px solid #001e50;
+  transition: 0.5s;
+}
+
+.vga-oh-sdk-depositor-dealer-inner ul li input[type=radio]:checked ~ .check::before{
+  background: #001e50;
+  transition: 0.5s;
+}
+
+.vga-oh-sdk-depositor-dealer-inner ul li input[type=radio]:checked ~ label{
+  color: #001e50;
+  transition: 0.5s;
+}
+
+
+/*----check en --------*/
+
+
+.vga-oh-sdk-depositor-dealer-address{
+  width:100%;
+  height: auto;
+  float: left;
+  font-family: VWText-Regular;
+  font-size: 16px;
+  color: #001e50;
+  margin-top: 10px;
+}
+.vga-oh-sdk-depositor-dealer-certified{
+  width: 25px;
+  height: auto;
+  float: left;
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  top: 45px;
+}
+.vga-oh-sdk-depositor-dealer-recommended{
+  width: 100%;
+  height: auto;
+  float: left;
+  font-family: VWText-Bold;
+  font-size: 14px;
+  color: #001e50;
+}
+.vga-oh-sdk-depositor-dealer-confirm-inner{
+  width: 100%;
+  height: auto;
+/*float: left;*/
+}
+.vga-oh-sdk-depositor-dealer-confirm-left{
+  width: 100%;
+  height: auto;
+  float: left;
+}
+.vga-oh-sdk-depositor-dealer-confirm-lefthead{
+  width:100%;
+  height:auto;
+  font-family: VWHead-Bold;
+  font-size:32px;
+  line-height:36px;
+  margin-bottom:20px;
+  font-weight: 300;
+  color:#000;
+}
+.vga-oh-sdk-depositor-dealer-confirm-lefthead span{
+  font-family: VWHead-Light;
+  color:#000;
+}
+.p-30{
+  padding: 30px !important;
+}
+.vga-oh-sdk-depositor-dealer-confirm-right{
+  width:100%;
+  height:auto;
+  float:left;
+  margin-top:35px;
+}
+.vga-oh-sdk-depositor-dealer-confirm-bottom{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-bottom: 20px;
+}
+.vga-oh-sdk-depositor-dealer-confirm-bottom ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: normal;
+}
+.vga-oh-sdk-depositor-dealer-confirm-bottom ul li{
+  width: 100%;
+  display: block;
+  float: left;
+  border-top: solid #cccccc 1px;
+  padding: 40px 0;
+}
+.vga-oh-sdk-depositor-dealer-confirm-bottom-head{
+  width: 100%;
+  height: auto;
+  float: left;
+  font-family: VWHead-Bold;
+  font-size: 32px;
+  color: #000;
+}
+.vga-oh-sdk-depositor-dealer-confirm-bottom-head span{
+  font-family: VWHead-Light;
+}
+.vga-oh-sdk-depositor-dealer-confirm-bottom-main{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-top: 30px;
+  padding-left: 60px;
+}
+.vga-oh-sdk-depositor-dealer-confirm-bottom-main-ic{
+  width: 25px;
+  height: 25px;
+  float: left;
+}
+.vga-oh-sdk-depositor-dealer-confirm-bottom-main-mid{
+  width: auto;
+  height: auto;
+  float: left;
+  margin-left: 17px;
+}
+.vga-oh-sdk-depositor-dealer-confirm-bottom-main-mid-head{
+  width: auto;
+  height: auto;
+  display: block;
+  /*float: left;*/
+  font-family: VWText-Bold;
+  font-size: 20px;
+  color: #000;
+}
+.vga-oh-sdk-depositor-dealer-confirm-bottom-main-mid-address{
+  width: auto;
+  height: auto;
+  float: left;
+  font-family: VWText-Regular;
+  font-size: 16px;
+  line-height: 32px;
+  color: #000;
+}
+.vga-oh-sdk-depositor-dealer-confirm-bottom-main-mid-address a{
+	color: #000 !important;
+}
+.vga-oh-sdk-depositor-dealer-confirm-bottom-main-change{
+  width: auto;
+  height: auto;
+  float: right;
+  border-bottom: solid #001e50 1px;
+  padding-bottom: 3px;
+}
+.mt-0{
+  margin-top: 0;
+}
+.pos-abs{
+  position: absolute;
+}
+
+.modal-dialog-centered {
+    min-height: calc(100% - (0* 0)) !important;
+}
+.modal{
+	top:0 !important;
+}
+.modal-dialog-centered{
+	min-height: inherit !important;
+}
+.pop-back{
+	width: auto;
+	height: 30px;
+	position: absolute;
+	left: 30px;
+	top: 50px;
+	cursor: pointer;
+	
+}
+.pop-back img{
+	margin-top: -7px;
+}
+.pop-back span{
+	font-family: VWText-Regular;
+	font-size: 25px;
+	color: #001e50;
+	margin-left: 10px;
+	
+}
+
+.vga-oh-sdk-depositor-dealer-Yourvehicle-pad{
+  padding: 0 76px !important;
+}
+.vga-oh-sdk-depositor-deposit-out{
+	width: 100%;
+	height: auto;
+	float: left;
+
+}
+.vga-oh-sdk-depositor-depositblock{
+	width:100%;
+	height: auto;
+	background-color: #eef2f4;
+	float: left;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	padding: 30px;
+	
+}
+.mb-0{
+	margin-bottom: 0 !important;
+}
+.vga-oh-sdk-depositor-depositblock-top{
+	width: 100%;
+	height: auto;
+	float: left;
+	font-family: VWHead-Bold;
+	font-size: 20px;
+	color: #000;
+}
+.vga-oh-sdk-depositor-depositblock-top span{
+	float: right;
+}
+.vga-oh-sdk-depositor-depositblock-bottom{
+	width: 100%;
+	height: auto;
+	float: left;
+	font-family: VWText-Regular;
+    font-size: 14px;
+	margin-top: 10px;
+	
+} 
+.vga-oh-sdk-depositor-depositblock-bottom span{
+	float: right;
+/*	margin-right: 38px;*/
+	font-size: 16px;
+}
+
+ .vga-oh-sdk-depositor-depositblock-top .info_dlr_prs{
+     position: relative;
+      width: 23px;
+      height: 23px;
+      cursor: pointer;
+      display: inline-block;
+      background: url(https://one-hub-assets.s3-ap-southeast-2.amazonaws.com/one-hub-dealer-callback/img/info.svg) no-repeat center;
+      vertical-align: middle;
+      margin-left: 10px;
+  }
+.vga-oh-sdk-depositor-depositblock-top .vw_OH_dlr_info__Box span{
+	font-family: VWText-Regular;
+	font-size: 13px;
+	color: #fff;
+	line-height: 20px;
+}
+
+.vga-oh-sdk-depositor-depositblock-top .vw_OH_dlr_info__Box {
+    padding: 15px;
+    width: 230px;
+    position: absolute;
+    border: 1px solid var(--OH_gray);
+    background: #001e50;
+	border-radius: 5px;
+}
+
+.vga-oh-sdk-depositor-depositblock-top .vw_OH_dlr_info__Box:after{
+	display: none;
+}
+.vga-oh-sdk-depositor-depositblock-top .vw_OH_dlr_info__Box_outer {
+    position: absolute;
+    left: 100%;
+    top: -50%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+    transform: translate(-200px, -69px);
+    z-index: 9;
+}
+.vga-oh-sdk-depositor-address{
+	font-size:16px !important;
+	color: #001e50 !important;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+	margin-top: 0 !important;
+	margin-bottom: 25px !important;
+	font-family: VWText-Regular !important;
+}
+.vga-oh-sdk-depositor-address-terms{
+	cursor: pointer;
+	color: #001e50 !important;
+}
+.vga-oh-sdk-depositor-specialhead-out{
+	width:100%;
+	height: auto;
+	float: left;
+	padding: 60px;
+	padding-bottom: 10px;
+}
+/*
+.vga-oh-sdk-depositor-specialhead{
+	width:auto;
+	height: auto;
+	float: left;
+	background-color: #fff;
+	font-family: VWHead-Bold;
+	line-height: normal;
+	color: #001E50;
+	font-size: 20px;
+	padding: 5px 10px;
+}
+*/
+.vga-oh-sdk-depositor-specialhead{
+	width:100%;
+	height: auto;
+	float: left;
+	font-family: VWHead-Bold;
+	line-height: normal;
+	color: #000;
+	font-size: 20px;
+	text-align: left;
+}
+.vga-oh-sdk-depositor-specialhead span{
+	font-family: VWHead-Light;
+}
+.vga-oh-sdk-depositor-specialhead img{
+	width: 24px;
+	height: 24px;
+	margin-top:-5px;
+}
+
+.vga-oh-sdk-depositor-specialhead-white{
+	color: #fff !important;
+}
+.vga-oh-sdk-depositor-specialhead-inn{
+	padding: 30px !important;
+	padding-bottom: 10px !important;
+}
+.ps-l-0{
+	padding-left: 0 !important;
+}
+.ml-0{
+	margin-left: 0 !important;
+}
+
+/*===============normal style end===============*/
+
+
+
+@media (min-width: 576px){
+.modal-dialog {
+    margin: 0 auto !important;
+}
+}
+
+@media (max-width: 768px) {
+.pd-sm{
+      padding-left: 60px !important;
+      padding-right: 60px !important
+    }
+  .vga-oh-sdk-depositor-dealer-confirm-right{
+    padding: 0 45px;
+  }
+	.vga-oh-sdk-depositor-dealer-confirm-inner .container{
+		padding: 0 15px !important;
+	}
+	.pd-lr-0{
+		padding: 0 !important;
+			
+	}
+	.vga-oh-sdk-depositor-mid-main{
+		padding: 0;
+	}
+	.pop-back{
+		top:20px !important;
+		left: 20px !important;
+	}
+	.pop-back span {
+    font-size: 20px;
+	}
+	.pop-back img {
+    width: 25%;
+	}
+  }
+
+
+@media (max-width: 500px) {
+	.vga-oh-sdk-depositor-dealer-confirm-lefthead{
+	  padding: 0 25px;
+	}
+	.pd-sm{
+	  padding-left: 25px !important;
+	  padding-right: 25px !important;
+	}
+	.vga-oh-sdk-depositor-dealer-confirm-right {
+		padding: 0;
+	}
+	
+	
+	.vga-oh-sdk-depositor-dealer-confirm-right{
+    padding: 0 10px;
+    margin-top: 10px;
+	}
+	
+}
+@media (max-width: 380px) {
+	.vga-oh-sdk-depositor-mid-text-bottom {
+		width: 60% !important;
+	}
+	.vga-oh-sdk-depositor-mid-text, .vga-oh-sdk-depositor-mid-text-bottom{
+		margin-left:10px;
+		
+	}
+}
+
+
+/*	disclaimer button syles*/
+.defaultBorderBlueBtn {
+	color: #001e50;
+	background-color: #ffffff;
+	border: 2px solid #001e50;
+	border-radius: 60px;
+	padding: 6px 40px;
+	cursor: pointer;
+}
+.defaultBorderBlueBtn:hover {
+	background-color: #0040c5;
+	outline: none !important;
+	border: 2px solid #0040c5;
+	padding: 6px 40px;
+}
+/*	disclaimer button syles*/	
+	
+/*	models popup*/
+.modal-open .vga-oh-savn-popup-disclaimerModal {
+	overflow-y: hidden;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+/*	background: #fff !important;*/
+	overflow: inherit;
+}
+
+.modal.show .modal-dialog{
+	height: 100% !important;
+	}
+
+.vga-oh-disclaimerContentpopup {
+	height: 30vh;
+	max-height: auto !important;
+}
+.vga-oh-savn-Disclaimer-OuterMainHeadPopup {
+	font-size: 48px;
+	line-height: 56px;
+	margin-bottom: 40px;
+	text-align: center;
+	font-family: VWHead-Light;
+	font-weight: normal;
+	color: #001e50;
+}
+.vga-oh-savn-privacyAccoHead img{
+	margin-right: 10px;
+}
+
+.vga-oh-savan-disclimer-PopupOuter {
+	max-width: 100%;
+/*	margin: 0 60px;*/
+	border-radius: 0;
+}
+.vga-oh-savan-disclimer-PopupOuter .modal-content {
+	padding: 50px 100px;
+/*	    max-width: 1320px;*/
+    margin: 0 auto;
+	height: 100% !important;
+}
+.vga-oh-savan-disclimer-PopupOuter .modal-content .modal-body {
+	padding: 0;
+}
+.vga-oh-savn-4w2mLayout {
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
+	padding: 0 30px;
+}
+.vga-oh-savn-modelPopupListing {
+	margin-bottom: 50px;
+}
+.vga-oh-savn-ModelpopupCustRow {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: -40px;
+	margin-left: -40px;
+}
+.vga-oh-savn-modelPopupListingDisclaimer p {
+	margin-bottom: 30px;
+	font-size: 16px;
+	line-height: 24px;
+	color: #000000;
+}
+.vga-oh-savn-modelPopupListingDisclaimer p a {
+	color: #00bdf1;
+	word-break: break-word
+}
+.vga-oh-savn-modalpopupCloseBtn {
+	position: relative;
+	bottom: -120px;
+	margin-bottom: 10px;
+	margin: 0 auto;
+	text-align: center;
+	border: 1px solid #ffffff;
+	background-color: #ffffff;
+	color: #001e50;
+	border-radius: 60px;
+	padding: 4px 25px;
+	cursor: pointer;
+	border: 1px solid #001e50;
+}
+.vga-oh-savn-modalpopupCloseBtn:hover {
+	background-color: #0040c5;
+	color: #ffffff;
+}
+.vga-oh-savn-modalpopupCloseBtn svg {
+	position: relative;
+	top: 6px;
+	left: -6px;
+}
+.vga-oh-savn-modalpopupCloseBtn span {
+	position: relative;
+	top: -3px;
+	left: 5px;
+}
+
+@media (max-width: 1024px) {
+.vga-oh-common-containerOuterMain {
+	padding-top: 100px;
+}
+}
+
+@media (max-width: 767px) {
+.vga-oh-savn-4w2mLayout {
+	padding: 0 15px;
+}
+.vga-oh-savn-Disclaimer-OuterMainHeadPopup {
+	font-size: 24px;
+	line-height: 28px;
+	margin-bottom: 26px;
+	font-family: VWHead-regular;
+}
+.vga-oh-savan-disclimer-PopupOuter .modal-content {
+	padding: 50px 17px 0 17px;
+}
+.vga-oh-savn-modelPopupListing p {
+	padding: 10px;
+	font-size: 14px;
+	line-height: 16px;
+}
+.vga-oh-savn-ModelpopupCustRow {
+	margin-right: -30px;
+	margin-left: -30px;
+}
+.vga-oh-savn-modalpopupCloseBtn {
+	bottom: -60px;
+}
+.vga-oh-savan-disclimer-PopupOuter {
+	max-width: 100%;
+	margin: 0 17px 80px 17px;
+}
+.vga-oh-disclaimerContentpopup {
+    height: 30vh;
+   
+}
+	.vga-oh-savan-disclimer-PopupOuter{
+		margin: 0 !important;
+	}
+.vga-oh-sdk-depositor-specialhead-inn {
+    padding:30px 60px !important;
+    padding-bottom: 10px !important;
+}
+}
+
+@media (max-width: 560px) {
+/*
+.vga-oh-disclaimerContentpopup {
+	height: 60vh;
+}
+*/
+}
+
+@media (max-width: 500px) {
+.vga-oh-sdk-depositor-specialhead-inn {
+    padding: 30px 25px !important;
+    padding-bottom: 10px !important;
+	}
+}
+
+@media (max-width: 400px) {
+.vga-oh-savn-TD1OuterMainHead {
+    font-size:30px;
+    line-height: 40px;
+
+	}
+.wd-55{
+	width: 50%;
+}
+.wd-25{
+	width: auto;
+}
+	.vga-oh-savn-td-choosedealerbefore ::-webkit-input-placeholder {
+	  font-size: 14px !important;
+	}
+
+	.vga-oh-savn-td-choosedealerbefore :-ms-input-placeholder { 
+	  font-size: 14px !important;
+	}
+
+	.vga-oh-savn-td-choosedealerbefore ::placeholder {
+	  font-size: 14px !important;
+	}
+}
+
+
+
+
+@media (min-height: 360px) and (max-height: 414px) and (min-width: 812px) and (max-width: 823px) {
+	.vga-oh-disclaimerContentpopup {
+	height: 30vh;
+}
+.vga-oh-savn-Disclaimer-OuterMainHeadPopup {
+	font-size: 24px;
+	line-height: 28px;
+	margin-bottom: 26px;
+	font-family: VWHead-regular;
+}
+.vga-oh-savn-modelPopupListing p {
+	padding: 10px;
+	font-size: 14px;
+	line-height: 16px;
+}
+.vga-oh-savan-disclimer-PopupOuter .modal-content {
+	padding: 50px 17px 0 17px;
+}
+.vga-oh-savan-disclimer-PopupOuter {
+	margin: 0 17px 80px 17px;
+}
+.vga-oh-savn-modalpopupCloseBtn {
+	bottom: -60px;
+}
+}
+
+@media (min-height: 320px) and (max-height: 359px) and (min-width: 568px) and (max-width: 640px) {
+	.vga-oh-disclaimerContentpopup {
+	height: 30vh;
+}
+	.vga-oh-savan-disclimer-PopupOuter .modal-content{padding: 17px;}
+	}
+	
+@media (max-width: 320px) {
+	.vga-oh-disclaimerContentpopup {
+	height: 30vh;
+}
+}
+
+/*	models popup*/
+
+
+
+
+
+.modal.fade .modal-dialog {
+	transition: transform 0 !important;
+    transition: -webkit-transform .0 !important;
+    transition: transform .0 !important;
+    transition: transform .0,-webkit-transform .0 !important;
+	transition: inherit !important;
+    transform: translate(0,0) !important;
+  
+}
+.modal-backdrop{
+	background: none !important;
+}
+.circleRing{
+    background-size: 80% !important;
+}
+.list-group-item:hover{
+	cursor: pointer;
+}
+.btn-primary:disabled {
+    color: #fff;
+    background-color: #ccc !important;
+    border-color: #ccc !important;
+	cursor: inherit !important;
+}
+#card-errors{
+	font-size: 12px !important;
+	color: #dc3545!important;
+}
+
+
+.vga-oh-sdk-error-outer{
+	width: 100%;
+	height: auto;
+	float: left;
+	margin: 120px 0 100px 0;
+	
+}
+.vga-oh-sdk-error-inner{
+	max-width: 600px;
+	height: auto;
+/*	border: solid #001e50 1.5px;*/
+	margin-left: 50%;
+	transform: translateX(-50%);
+	padding: 30px;
+	
+}
+.vga-oh-sdk-error-ic{
+	width: 100%;
+	height: auto;
+	float: left;
+	text-align: center;
+	
+}
+.vga-oh-sdk-error-ic img{
+	width: 100px;
+	
+}
+.vga-oh-sdk-error-right{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+.vga-oh-sdk-error-head{
+	width: 100%;
+	height: auto;
+	float: left;
+	font-family: VWHead-Bold;
+	font-size: 30px;
+	color: #001e50;
+	text-align: center;
+	text-align: center;
+	margin-top: 20px;
+}
+.vga-oh-sdk-error-text{
+	width: 100%;
+	height: auto;
+	float: left;
+	font-family: VWText-Regular;
+	font-size: 16px;
+	color: #000;
+	margin-top: 10px;
+	text-align: center;
+}
+.vga-oh-sdk-error-text-btblock{
+	width: 100%;
+	height: auto;
+	float: left;
+	text-align: center;
+	margin-top: 40px;
+}
+.vga-oh-sdk-error-bt{
+	border: solid #001e50 2px !important;
+	padding: 8px 30px;
+	border-radius: 100px;
+	color: #001e50 !important;
+	background: none !important;
+	font-family: VWText-Regular;
+}
+.vga-oh-sdk-error-bt:hover{
+	border: solid #4cc7f4 2px!important;
+	color: #4cc7f4 !important;
+}
+
+/**********                       ***************
+**************VWFS SSN STYLE STARTS**************/
+
+.mid-inner-border-bottom{
+  border-bottom:solid #000 0.5px !important;
+  padding-bottom: 22px;
+  padding-top: 27px !important;
+  line-height: 32px;
+}
+
+
+
+.vwfs-ssn-veh-option {
+  float:left;
+  display: block;
+  width:100%;
+  margin-top:10px;
+}
+.vwfs-ssn-veh-option .vga-oh-sdk-depositor-mid-right {
+  margin: 0;
+}
+.vwfs-ssn-veh-option span.vwfs-ssn-option-list {
+  padding-left: 65px;
+  color: #001e50;
+  font-size: 15px;
+  text-align: left;
+  width: 70%;
+  float: left;
+}
+.vwfs-ssn-veh-option ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.vwfs-ssn-veh-option ul li {
+  width: 100%;
+  list-style: none;
+  padding-bottom: 10px;
+  margin: 0;
+  float: left;
+  line-height: 20px;
+}
+.vwfs-ssn-veh-option ul li:last-child{
+  padding-bottom: 5px;
+}
+.vwfs-ssn-choose-loan h4 {
+  font-family: VWHead-Bold;
+  margin: 0 0 20px;
+  font-size: 24px;
+  color:black;
+  line-height: 28px;
+}
+.vwfs-ssn-choose-loan p {
+  font-size: 16px;
+  font-family: VWText-Regular;
+  line-height: 24px;
+}
+
+/* vwfs custom radio */
+
+.vwfs-ssn-choose-loan .vwfs-customRadio {
+  display: inline;
+  font-family: VWText-Regular;
+  font-size:16px;
+  line-height: 20px;
+  padding-left:40px;
+  position: relative;
+  cursor: pointer;
+  z-index: 0;
+}
+.vwfs-ssn-choose-loan .vwfs-customRadio-session {
+ width:auto;
+ float:left;
+ margin-right:10px;
+}
+.vwfs-ssn-choose-loan label {
+  color: #001e50;
+  font-size: 14px;
+  line-height: 16px;
+}
+.vwfs-ssn-choose-loan input {
+  border: none;
+  border-bottom: 1px solid #001e50;
+  border-radius: 0;
+  padding: 5px 40px;
+  font-size: 24px;
+  line-height: 36px;
+}
+.vwfs-customRadio input {
+ /* position: absolute;*/
+  opacity: 0;
+  cursor: pointer;
+}
+.vwfs-customRadio .checkmark {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid var(--OH_blue);
+}
+.vwfs-ssn-loan-type .vwfs-customRadio span {
+  font-family: VWText-Regular !important;
+}
+
+/* On mouse-over, add a grey background color */
+.vwfs-customRadio:hover input ~ .checkmark {
+  /*background-color: #ccc;*/
+}
+
+/* When the radio button is checked, add a blue background */
+.vwfs-customRadio input:checked ~ .checkmark {
+  background-color: #fff;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.vwfs-customRadio .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.vwfs-customRadio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.vwfs-customRadio .checkmark:after {
+     top: 4px;
+    left: 4px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: var(--OH_blue);
+}
+/* vwfs custom radio */
+
+/* vwfs finance calculator style starts */
+.vwfs-savnH2 {
+  width: 100%;
+  height: auto;
+  font-family: VWHead-Bold;
+  font-size: 32px;
+  line-height: 25px;
+  margin-top: 0;
+}
+.vwfs-savnH2 span {
+  font-family: VWHead-Light;
+}
+.vwfs-savn-dealerchooseRadioOuter .custom-control {
+  padding-left: 2.5rem;
+} 
+.vwfs-savnbFW {
+  padding: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.vwfs-savan-dealerChooseradioMain {
+  margin-bottom: 15px;
+}
+.vwfs-savan-dealerChooseradioMainLabel {
+  padding-left: 10px;
+  font-size: 17px;
+  color: #001e50;
+}
+.vwfs-savn-summary-formOuter .form-group label {
+  font-size: 14px;
+  color: #001e50;
+  margin-bottom: 0;
+}
+.vwfs-savn-summary-formOuter .form-group .form-control {
+  border: none;
+  border-bottom-color: currentcolor;
+  border-bottom-style: none;
+  border-bottom-width: medium;
+  border-bottom: 1px solid #dfe4e8;
+  border-radius: 0;
+  padding-left: 0;
+  color: #001e50;
+  font-size: 18px;
+}
+.vwfs-savn-summary-formOuter .form-group .form-control.editable-field,
+.vwfs-ssn-editable-field {
+  border-bottom:1px solid #7c7d7e !important;
+}
+.vwfs-savn-summary-formOuter .form-group .form-control:disabled, .form-control[readonly] {
+  background-color: #ffffff;
+  /*-webkit-text-fill-color: #001e50;*/
+  -webkit-text-fill-color: #a3a2a2;
+  opacity: 1;
+  line-height: 33px;
+  padding-bottom: 0;
+}
+.vwfs-savan-dealerChooseradioMainLabel::after{
+  width: 24px;
+  height: 24px;
+}
+.vwfs-savan-dealerChooseradioMainLabel::before {
+  position: absolute;
+  top: .25rem;
+  left: -1.5rem;
+  display: block;
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+  content: "";
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #ffffff!important;
+  border: 1px solid #001e50!important;
+  outline: none !important;
+}
+.vwfs-savan-dealerChooseradioMain .vwfs-savan-dealerChooseradioMainInput:checked ~ .vwfs-savan-dealerChooseradioMainLabel::before {
+  background-color: #ffffff;
+}
+.vwfs-savan-dealerChooseradioMain .vwfs-savan-dealerChooseradioMainInput:checked ~ .vwfs-savan-dealerChooseradioMainLabel::after {
+  background: #001e50;
+  border-radius: 50%;
+  top: 10px;
+  left: -18px;
+  display: block;
+  width: 12px;
+  height: 12px;
+}
+.__DropMe {
+  position: relative;
+}
+.vga-stock-body-prs-label {
+  position: relative;
+  padding: 4px 0px;
+  /*z-index: 9;*/
+  /*border-bottom: 1px solid #dfe4e8;
+  border-bottom-color: rgb(223, 228, 232);*/
+  background-color: #fff;
+}
+.vga-stock-body-prs-label p {
+  font-size: 18px;
+  /*color: #bfbfbf;*/
+  color:#001e50;
+  margin: 0;
+  line-height: 23px;
+}
+.vga-stock-body-prs-label i::before {
+  position: absolute;
+  right: 0px;
+  width: 20px;
+  content: "";
+  height: 20px;
+  top: 35%;
+  background: url(https://one-hub-assets.s3-ap-southeast-2.amazonaws.com/vwfs/img/chevron-down-sm.svg  ) no-repeat center;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-font-smoothing: antialiased;
+}
+.vga-stock-body-prs-label.drp-stock-arrow i:before{
+  -webkit-transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%) rotate(180deg);
+  transition: 0.5s;
+}
+.vwfs-savan-summary-FC-boxOuter {
+  background-color: #dfe4e8;
+  border-radius: 10px;
+  padding: 20px;
+  min-height: 180px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.vwfs-savan-summary-FC-boxContents {
+  display: table-cell;
+  vertical-align: middle;
+}
+.vwfs-savan-summary-FC-boxOuter h4 {
+  font-size: 24px;
+  font-family: VWHead-Regular;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+.vwfs-savan-summary-FC-boxOuter h4 span {
+  font-family: VWHead-Bold;
+}
+.vwfs-savan-summary-FC-boxOuter h3 {
+  font-family: VWHead-Regular;
+  font-size: 36px;
+  line-height:normal;
+  color: #000000;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.vwfs-savan-summary-FC-boxOuter h3 span {
+  font-family: VWHead-Bold;
+}
+.vga-stock-body-prs-label i:before {
+  position: absolute;
+  right: 0px;
+  width: 20px;
+  content: "";
+  height: 20px;
+  top: 35%;
+  background: url(https://one-hub-assets.s3-ap-southeast-2.amazonaws.com/vwfs/img/chevron-down-sm.svg) no-repeat center;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-font-smoothing: antialiased;
+}
+
+.vwa-stock-filter-prs-model-dropdown{
+  border-top: 1px solid #001e50;
+ 
+}
+.vwa-stock-filter-prs-model-dropdown-k1{
+  position: relative;
+  padding: 20px;
+}
+
+.vwa-stock-filter-prs-model-dropdown{
+  position: absolute;
+  left: 0;
+  /* margin-left: -1px; */
+  top:100%;
+  visibility:hidden;
+  display: block;
+  z-index: 1;
+  width: 100%;
+  opacity: 0;
+  /*min-width: 900px;
+  margin-top: -3px;*/
+  z-index: 9999;
+  background:#fff;
+  box-shadow: 0px 8px 5px rgba(0,0,0,0.08);
+  transition: all 0.2s;
+}
+.vwa-stock-filter-prs-model-dropdown.flt_active {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+.vga-oh-sdk-enquiryform-droplist {
+  width: 100%;
+  height: auto;
+  float: left;
+  padding: 10px;
+}
+.vga-oh-sdk-enquiryform-droplist ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: normal;
+}
+.vga-oh-sdk-enquiryform-droplist ul li {
+  width: 100%;
+  display: block;
+  float: left;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+/* Swith Rounded sliders */
+.switch {position: relative;display: inline-block;width: 52px;height: 24px;left: 60px;}
+.switch input {opacity: 0;width: 0;height: 0;}
+.slider {position: absolute;cursor: pointer;top: 0;left: 0;right: 0;bottom: 0;
+  -webkit-transition: .4s;transition: .4s;background-color: #fff;border: 1px solid #001e50;}
+.slider:before {position: absolute;content: "";height: 16px;width: 16px;left: 4px;bottom: 4px;-webkit-transition: .4s;
+	transition: .4s;background-color: #001e50;top: 3px;}
+input:checked + .slider {background-color: #ffffff;}
+input:focus + .slider {box-shadow: 0 0 1px #fff;}
+input:checked + .slider:before {-webkit-transform: translateX(26px);-ms-transform: translateX(26px);transform: translateX(26px);}
+.slider.round {border-radius: 34px;}
+.slider.round:before {border-radius: 50%;}
+.vwfs-savn-weeklyCls{position: absolute;left: -60px;font-family: VWHead-Regular;font-size: 14px;color: #000000;}
+.vwfs-savn-monthlyCls{position: absolute;left: 65px;font-family: VWHead-Regular;font-size: 14px;color: #000000;}
+/* Swith Rounded sliders */
+
+.boxBorderedOuter {
+  border: 1px solid #dfe4e8;
+  background-color: #fff !important;
+}
+
+.boxBorderedOuter h4 {
+  font-size: 18px;
+  font-family: VWHead-Regular;
+  margin-bottom: 5px;
+}
+.boxBorderedOuter h3 {
+  font-size: 36px;
+  font-family: VWHead-Regular;
+  margin-bottom: 0;
+}
+.vga-oh-savn-td-stepperBtnOuterStepper .btn-default {
+	margin-top: 0;
+  background-color:#fff;
+  border: 1px solid #001e50;
+  border-radius: 60px;
+  padding: 11px 36px;
+  color:#001e50;
+  font-family: VWText-Regular;
+  font-size: 14px;
+}
+
+/* VWFS Disclaimer Popup Style*/
+
+#vwfs-savn-disclaimerPopup {
+  width: 700px !important;
+  cursor: default !important;
+  font-family: VWText-Regular;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+}
+.fancybox-is-open .fancybox-bg {
+  opacity: 0.7 !important;
+}
+.vwfs-savan-puOuter-k1-dis h2 {
+  font-family: VWHead-Bold;
+  font-size: 30px;
+  line-height: 36px;
+  color: #001e50;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+#vwfs-savn-disclaimerPopup h5 {
+  font-family: VWHead-Bold;
+}
+.vga-oh-savan-disclimer-PopupOuter .modal-content {
+  overflow-y: scroll;
+}
+
+
+
+
+
+
+/*****Calculate repayments style starts*********/
+
+.vwfs-ssn-choise-assurance-section  {
+  padding-right: 40px;
+}
+
+.vwfs-ssn-choise-assurance-section p {
+  font-size: 16px;
+  font-family: VWText-Regular, sans-serif;
+}
+.vwfs-ssn-choise-assurance-section h4 {
+  font-family: VWHead-Bold, sans-serif;
+  margin: 0 0 10px;
+  font-size: 24px;
+  line-height: 28px;
+  color:#000;
+}
+ .vwfs-ssn-choise-assurance-section p {
+   font-size: 16px;
+   font-family: VWText-Regular;
+   line-height: 20px;
+   color:#000;
+ }
+
+
+
+/**********                       ***************
+**************VWFS-FA SSN STYLE STARTS**************/
+
+
+
+
+ .vwfs-ssn-finance-offer-name {
+   position: relative;
+   top: -30px;
+   color:#000;
+   font-family: VWHead-Light;
+   font-size: 16px;
+   font-weight:200;
+   letter-spacing: normal;
+   float:right;
+   opacity:0;
+ }
+
+ .vwfs-ssn-finance-offer-name span {
+   margin-right: 5px;
+ }
+
+
+/*Repayment Style Starts*/
+.vwfs-ssn-repayments-section {
+	width:auto;
+	height:auto;
+	border:solid 2px #001e50;
+	padding: 25px;
+	position: relative;
+}
+.vwfs-ssn-repayments-section .heading {
+  font-family: VWText-Regular;
+	font-size: 16px;
+	color:#001e50;
+	padding: 0 10px;
+	top:-13px; 
+	left:15px;
+	position: absolute;
+  background: #fff;
+  line-height: 20px;
+}
+.vwfs-ssn-repayments-section .weekly-amt {
+  font-size: 24px;
+  line-height: 28px;
+  font-family: VWHead-Light;
+  margin-top: 15px;
+  font-weight: 300;
+  color:#000;
+}
+.vwfs-ssn-repayments-section .weekly-amt span {
+	font-size: 32px;
+	font-family: VWHead-Bold;
+  color:#000;
+  line-height: 36px;
+}
+.vwfs-ssn-repayments-section .monthly-amt {
+  font-size: 16px;
+  line-height: 28px;
+  color:#000;
+  font-family: VWHead-Light;
+  font-weight:300;
+}
+.vwfs-ssn-repayments-section .monthly-amt span {
+	font-size: 16px;
+	font-family: VWHead-Bold;
+	color:#000;
+}
+.vwfs-ssn-repayments-section .img-placeholder-section{
+	 width:100%;
+	 height:auto;
+}
+.vwfs-ssn-repayments-section .payment-splitup-section {
+  margin-top:10px;
+}
+.vwfs-ssn-repayments-section .payment-splitup-section ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.vwfs-ssn-repayments-section .payment-splitup-section ul li{
+  font-family: VWHead-Regular;
+	list-style: none;
+	margin: 0;
+	padding-bottom:8px;
+	font-size: 16px;
+	color:#000;
+}
+.vwfs-ssn-repayments-section .payment-splitup-section ul li span.splitup-list {
+  font-family: VWText-Regular;
+	width:70%;
+  float:left;
+  font-size: 16px;
+  line-height: 24px;
+  color:#000;
+}
+.vwfs-ssn-repayments-section .payment-splitup-section ul li span.splitup-dtls{ 
+	color:#000;
+	font-family: VWText-Bold;
+	float:right;
+	width:85px;
+	text-align: right;
+}
+.vwfs-ssn-repayments-section .payment-splitup-section ul li span.splitup-dtls sup{
+  margin-right:-7px
+}
+.vwfs-ssn-repayments-section .img-placeholder-section .img-placeholder-section-inner .img-placeholder-section-inner-content {
+  padding:15px;
+}
+.vwfs-ssn-repayments-section .img-placeholder-section .img-placeholder-section-inner-content .veh-name {
+  font-family: VWHead-Bold;
+  font-size: 16px;
+  color:#fff;
+  display: block;
+  line-height: 20px;
+}
+.vwfs-ssn-repayments-section .img-placeholder-section .img-placeholder-section-inner-content .veh-model {
+  font-family: VWHead-Light;
+  font-size: 16px;
+  color:#fff;
+  display: block;
+  line-height: 20px;
+}
+/*Repayment Style Ends*/
+
+
+/*Reduce Your Monthly Repayment Style Starts*/
+
+.vwfs-ssn-reduce-monthly-repayment-section .form-group {
+  height: 50px;
+}
+.vwfs-ssn-reduce-monthly-repayment-section .form-group label {
+  font-size: 16px;
+  color: #001e50;
+  margin-bottom: 0;
+  line-height: 20px;
+}
+.vwfs-ssn-reduce-monthly-repayment-section .form-group .form-control {
+  border: none;
+  border-bottom: 1px solid #dfe4e8;
+  border-radius: 0;
+  padding-left:15px;
+  color: #001e50;
+  font-size: 16px;
+}
+.vwfs-ssn-reduce-monthly-repayment-section .fa-usd {
+  position: relative;
+  top:-32px;
+  font-size: 14px;
+  color:#001e50;
+}
+/*Reduce Your Monthly Repayment Style Ends*/
+
+/*Infobox Style Starts*/
+
+.infobox {
+  margin-top: 19px;
+}
+.infobox-benefits {
+	position: relative;
+  background: #fff;
+  color:#001e50;
+  font-size: 16px;
+	width:100%;
+	line-height: 20px;
+	padding: 15px;
+	/* box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.25); */
+	display:block;
+  top:-20px;
+  z-index: 8;
+}
+.infobox-benefits p {
+  width:94%;
+  text-align: left;
+  color:#001e50;
+}
+.infobox-benefits p span {
+  font-family: VWText-Bold;
+}
+.infobox-benefits .closebutton {
+	position: absolute;
+	top:10px;
+	right:10px;
+	cursor: pointer;
+}
+.infobox a.infobox-opener {
+font-size: 12px;
+color:#001e50;
+text-decoration: underline;
+line-height: 20px;
+}
+/*Infobox Style Ends*/
+
+
+
+/*Email and Download PDF Style Starts*/
+
+.vwfs-ssn-email-download-section {
+ font-size: 15px;
+ font-family: VWText-Regular;
+ color:#001e50;
+}
+.vwfs-ssn-email-download-section span.email-txt {
+  position: relative;
+  top:2px
+}
+.vwfs-ssn-email-download-section span.download-txt {
+  position: relative;
+  top:2px
+}
+.vwfs-ssn-email-download-section  span a {
+  color:#001e50;
+}
+.vwfs-ssn-email-download-section  span a:hover {
+  color:#001e50;
+}
+
+/*Email and Download PDF Style Ends*/
+
+/*Choose your loan term (month) Style Starts*/
+
+.vwfs-ssn-loan-term-chooser-month-section .vwfs-customRadio-session {
+  width: auto;
+  float: left;
+  margin-right: 10px;
+}
+.vwfs-ssn-loan-term-chooser-month-section .vwfs-customRadio {
+  display: inline;
+  font-family: VWText-Regular;
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 40px;
+  position: relative;
+  cursor: pointer;
+  z-index: 0;
+}
+/*Choose your loan term (month) Style Ends*/
+
+
+/*Term Slider Style Starts*/
+
+.vwfs-ssn-term-chooser-section   {
+  width:100%;
+  padding-left: 9px;
+  padding-right: 9px;
+  margin-top:40px !important;
+}
+.range {
+  position: relative;
+  width:100%;
+  height: 1px;
+}
+.range input[type=range] {
+  -webkit-appearance: none;
+  margin: 0;
+  width: 100%;
+  position: absolute;
+  top:1px;
+  padding-bottom:5px;
+}
+.range input[type=range]:focus {
+  outline: none;
+}
+.range input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 1px;
+  cursor: pointer;
+  background: #ccc;
+  border-radius: 3px;
+}
+.range input[type=range]::-webkit-slider-thumb {
+  border: 0px solid #000000;
+  height: 12px;
+  width: 12px;
+  border-radius:30px;
+  background: #001e50;
+  box-shadow: 0 0 0 8px rgba(0, 30, 80, 0.25);
+ /* box-shadow: 0 0 0 8px RGB(191, 199, 210);*/
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -5.6px;
+}
+.range input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #ccc;
+}
+.range input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 1px;
+  cursor: pointer;
+  background: #ccc;
+  border-radius: 25px;
+  border: 0px solid #000101;
+}
+.range input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none;
+  border: 0px solid #000000;
+  height: 12px;
+  width: 12px;
+  border-radius:50%;
+  background: #001e50;
+  box-shadow: 0 0 0 9px rgba(0, 30, 80, 0.25);
+  /*box-shadow: 0 0 0 10px RGB(191, 199, 210);*/
+  cursor: pointer;
+}
+.range input[type=range]::-ms-track {
+  width: 100%;
+  height: 1px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 39px 0;
+  color: transparent;
+}
+.range input[type=range]::-ms-fill-lower {
+  background: #ccc;
+  border: 0px solid #000101;
+  border-radius: 50px;
+}
+.range input[type=range]::-ms-fill-upper {
+  background: #ccc;
+  border: 0px solid #000101;
+  border-radius: 50px;
+}
+.range input[type=range]::-ms-thumb {
+  border: 0px solid #000000;
+  height: 10px;
+  width: 10px;
+  border-radius:30px;
+  background: #001e50;
+  box-shadow: 0 0 0 10px RGB(191, 199, 210);
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right:10px;
+}
+.range input[type=range]:focus::-ms-fill-lower {
+  background: #ccc;
+}
+.range input[type=range]:focus::-ms-fill-upper {
+  background: #ccc;
+}
+.range-labels {
+  width:100%;
+  margin: 15px 0 0 0;
+  padding: 0;
+  list-style: none;
+  display: inline-table;
+  height:45px;
+}
+.range-labels li {
+  position: relative;
+  padding-top:12px;
+  /*width:32.22%;*/
+  display: table-cell;
+  color: #001e50;
+  font-size: 14px;
+  cursor: pointer;
+}
+.range-labels li:first-child {
+  left:-3px;
+}
+.range-labels li:last-child {
+  text-align: right;
+  padding-right: 0;
+  right:-3px;
+}
+/*.range-labels li:nth-child(3) {
+  right:-4px;
+}*/
+.range-labels li::before {
+  position: absolute;
+  top:-14px;
+  right:108px;
+  left: 0;
+  content: "";
+  margin: 0 auto;
+  /*width: 9px;
+  height: 9px;*/
+  background: #b2b2b2;
+  border-radius: 50%;
+}
+.range-labels .active {
+  color: #001e50;
+}
+.range-labels .selected::before {
+  background: #001e50;
+}
+.range-labels .active.selected::before {
+  display: none;
+}
+
+
+/*****Mozila hack starts ( This hack is used to solve range issue in Mozila browser )  *********/
+
+@-moz-document url-prefix() { 
+  .range input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    margin:0;
+    background: transparent;
+    top:-9px;
+    padding-bottom:0;
+  }
+  .range {
+    position: relative;
+    width: 100%;
+    height: 1px;
+  }
+
+}
+
+/*****Mozila hack ends ( This hack is used to solve range issue in Mozila browser ) *********/
+
+
+ /*****Edge hack starts ( This hack is used to solve range issue in Edge browser )*********/
+
+ @supports (-ms-ime-align:auto) {
+
+  .range input[type=range] {
+    -webkit-appearance: none;
+    margin: 12px 0;
+    width: 100%;
+    position: absolute;
+    top:-55px;
+  }
+  .range-labels li:last-child {
+    text-align:left
+  }
+  .vwfs-ssn-term-chooser-section {
+    padding-left: 0;
+    padding-right: 0;
+}
+  .range-labels li:first-child {
+    left: 0;
+}
+  .range-labels li:last-child {
+    right: 0;
+}
+  .range-labels li:nth-child(3) {
+    
+}
+}
+
+ /*****Edge hack starts ( This hack is used to solve range issue in Edge browser )*********/
+
+
+
+
+
+/*Kilometer Chooser Style Starts*/
+
+.vwfs-ssn-kilometer-annually-drive-number-increment-section .show-kilometer {
+  margin: auto;
+  text-align: center;
+  line-height: 37px;
+  color:#001e50;
+}
+
+.kilometer-chooser {
+	width:300px;
+	height:40px;
+	border:solid 1px  #bfbfbf;
+	border-radius: 30px;
+}
+.kilometer-chooser .no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.kilometer-chooser:focus{
+  outline: none;
+  background: transparent;
+}
+.kilometer-chooser input[type=text] {
+  float: left;
+  color:#001e50;
+	width: 220px;
+	font-size: 16px;
+  padding: 10px 0 0 0;
+	text-align: center;
+	border:none;
+}
+.kilometer-chooser-plus-button {
+	width: 28px;
+  height: 28px;
+	margin:5px;
+  float: right;
+	cursor:pointer;
+	text-align: center;
+	border-radius: 30px;
+	border:solid 2px #0b2857;
+}
+.kilometer-chooser-plus-button span {
+	 font-size: 20px;
+   color:#0b2857;
+   line-height: 20px;
+}
+.kilometer-chooser-plus-button span:focus{
+  outline: none;
+  background: transparent;
+}
+.kilometer-chooser-minus-button {
+	width: 28px;
+  height: 28px;
+	margin:5px;
+  float: left;
+	cursor:pointer;
+	text-align: center;
+	border-radius: 30px;
+	border:solid 2px #0b2857;
+}
+.kilometer-chooser-minus-button span {
+	font-size: 33px;
+  color:#0b2857;
+  line-height: 19px;
+}
+.kilometer-chooser-minus-button span:focus{
+  outline: none;
+  background: transparent;
+}
+
+
+
+
+
+
+ /*****Device CSS starts*********/
+
+ @media (max-width:1440px) {
+  .vwfs-savan-dealerChooseradioMainLabel {
+   font-size: 14px !important;
+   padding-top: 4px;
+}
+  }
+  @media (max-width: 768px) { 
+    .vga-oh-sdk-depositor-dealer-confirm-inner .first-stepper-container{
+      padding-left:45px;
+      padding-right:45px;
+    }
+    .vwfs-ssn-choise-assurance-section {
+      padding-right: 0;
+    }
+    .vwfs-ssn-repayments-section {
+      margin-top: 40px;
+    }
+    .vwfs-ssn-reduce-monthly-repayment-section .form-group {
+      width: 75%;
+    }
+    .infobox a {
+      position: absolute;
+      top: 32px;
+      right: 15px;
+    }
+    .infobox-benefits {
+      top: -7px;
+    }
+    .pl-md-3 {
+      padding-left:15px !important;
+    }
+   
+  }
+
+  @media (max-width: 1024px) {
+    .range input[type=range]::-webkit-slider-thumb {
+      border: 0px solid #000000;
+      height: 15px;
+      width: 15px;
+      border-radius:30px;
+      background: #001e50;
+      box-shadow: 0 0 0 8px rgba(0, 30, 80, 0.25);
+    }
+    .range input[type=range]::-moz-range-thumb {
+      -webkit-appearance: none;
+      border: 0px solid #000000;
+      height: 15px;
+      width: 15px;
+      border-radius:50%;
+      background: #001e50;
+      box-shadow: 0 0 0 8px rgba(0, 30, 80, 0.25);
+      /*box-shadow: 0 0 0 10px RGB(191, 199, 210);*/
+      cursor: pointer;
+    }
+  }
+  
+  @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : landscape){
+    .vwfs-ssn-choose-loan .vwfs-customRadio {
+      padding-left: 32px;
+    }
+  }
+  @media screen and (min-device-width: 769px) and (max-device-width: 990px) { 
+   .container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .pd-lr-sm-0 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+  .vga-oh-sdk-depositor-dealer-confirm-lefthead {
+    padding: 0 60px !important;
+}
+  .vga-oh-sdk-depositor-dealer-confirm-right {
+    padding: 0 45px;
+} 
+  .vga-oh-sdk-depositor-dealer-confirm-inner .container {
+   padding: 0 15px !important;
+}
+  .vga-oh-sdk-depositor-dealer-confirm-inner .first-stepper-container {
+    padding-left: 45px;
+    padding-right: 45px;
+}
+.vwfs-ssn-repayments-section {
+   margin-top: 40px;
+}
+.p0 {
+   padding:0 !important;
+}
+.vwfs-ssn-choise-assurance-section {
+  padding-right: 0;
+}
+.vwfs-ssn-reduce-monthly-repayment-section .form-group {
+  width: 83%;
+}
+.infobox a {
+  position: absolute;
+  top: 32px;
+  right: 15px;
+}
+.infobox-benefits {
+  top: -7px;
+}
+  }
+
+  @media screen and (min-device-width: 992px) and (max-device-width: 1159px) { 
+    .px-2 {
+      padding-left:0 !important;
+      padding-right:0 !important;
+    }
+    .vwfs-ssn-email-download-section {
+      font-size: 14px;
+    }
+    .vwfs-ssn-repayments-section .payment-splitup-section ul li span.splitup-list {
+      width: 62%;
+      font-size: 15px;
+    }
+    .vwfs-ssn-repayments-section .payment-splitup-section ul li {
+      font-weight: 15px;
+    }
+}
+  @media (max-width: 600px) {
+    .vwfs-savnH2 {
+      font-size: 20px !important;
+    }
+    #vwfs-savn-disclaimerPopup {
+      padding: 40px 32px;
+    }
+    .vwfs-savan-puOuter-k1-dis h2 {
+      font-size: 24px;
+      line-height: 28px;
+      font-family: VWHead-Bold;
+    }
+    #vwfs-savn-disclaimerPopup h5 {
+       font-family: VWHead-Bold;
+    }
+    
+    .vwfs-savan-summary-FC-boxOuter {
+      margin-bottom:25px;
+    }
+    .vwfs-ssn-veh-option ul li {
+      padding-bottom: 22px;
+     }
+     .vwfs-ssn-veh-option ul li:last-child{
+      padding-bottom: 5px;
+    }
+     .vwfs-ssn-veh-option span.vwfs-ssn-option-list {
+      text-align: left;
+      display: inline-flex;
+      padding-left:55px;
+      line-height: 18px;
+      width: 60%;
+    }
+    .vga-oh-sdk-depositor-mid-text {
+      margin: 5px 0 0 10px;
+    }
+    .vwfs-ssm-sm-proceed-finance {
+      padding-left: 45px ;
+      padding-right: 45px ;
+    }
+    .vga-oh-savn-TD1OuterMainHead {
+      font-size: 32px;
+      line-height: 36px;
+    }
+    .vwfs-ssn-choose-loan h4 {
+      font-size: 20px;
+    }
+    .vwfs-ssn-choise-assurance-section {
+      padding-right: 0;
+    }
+    .vwfs-ssn-repayments-section {
+      margin-top: 40px;
+    }
+    .vwfs-ssn-repayments-section .weekly-amt span {
+      font-size: 32px;
+    }
+    .vga-oh-sdk-depositor-priv {
+      padding-top: 0px;
+      margin-top: 0px;
+    }
+    .range-labels li:nth-child(3) {
+      right: 0px;
+    }
+  }
+   @media (max-width: 576px){
+     
+    .vwfs-ssm-sm-proceed-finance {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .container {
+      padding-left: 25px;
+      padding-right: 25px;
+  }
+    .vga-oh-sdk-depositor-dealer-confirm-right{
+    padding: 0 10px;
+  }
+  .vwfs-ssn-choose-loan .vwfs-customRadio-session {
+    margin-right:0;
+  }
+  .vwfs-ssn-repayments-section .payment-splitup-section ul li span.splitup-list {
+    width:67%;
+    font-size: 16px;
+  }
+  .vwfs-ssn-choise-assurance-section h4 {
+    font-size: 20px;
+    margin: 15px 0 24px;
+  }
+  .infobox-benefits p {
+    width: 93%;
+  }
+  .vwfs-ssn-repayments-section .payment-splitup-section ul li span.splitup-dtls {
+    width: 85px;
+  }
+   }
+@media screen and (max-width:500px){
+   
+.px-sm-0 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+   }
+.vwfs-ssm-sm-proceed-finance {
+    padding-left: 0;
+    padding-right: 0;
+}
+.vga-oh-savn-td-stepperBtnOuterStepper {
+    margin-bottom: 0;
+}
+.form-_vw-OH_dealer_prs_group {
+  margin-bottom: 0;
+}
+.vw-OH_dealer_form_prs_wrapper {
+  padding-bottom: 0;
+}
+.p-sm-10 {
+  padding: 0 10px !important;
+}
+.pl-sm-0 {
+  padding-left:0 !important;
+}
+.vwfs-ssn-email-download-section .download-img img {
+  margin-left: 18px;
+}
+.infobox a {
+  position: absolute;
+  top:32px;
+  right:15px;
+}
+.vwfs-ssn-reduce-monthly-repayment-section .form-group {
+  width: 75%;
+}
+.infobox a.infobox-opener::before{
+  opacity: 9;
+}
+.infobox a.infobox-opener::after{
+  opacity: 0;
+}
+.infobox-benefits {
+  top: 0px;
+}
+.kilometer-chooser {
+  width:100%;
+}
+.vwfs-ssn-choose-loan .vwfs-customRadio {
+  padding-left: 33px;
+}
+}
+
+
+  
+  @media screen and (min-device-width: 320px) and (max-device-width: 360px) { 
+
+    .vwfs-ssn-repayments-section .payment-splitup-section ul li span.splitup-dtls {
+      width:auto;
+    }
+    .vwfs-ssn-repayments-section .payment-splitup-section ul li span.splitup-list {
+      font-size: 14px;
+    }
+    .vwfs-ssn-repayments-section .payment-splitup-section ul li span.splitup-dtls {
+      font-size: 14px;
+    }
+  }
+
+
+
+
+  
+
+  @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : landscape){
+    .vwfs-ssn-choose-loan .vwfs-customRadio {
+      padding-left: 32px;
+    }
+    .vwfs-ssn-repayments-section .payment-splitup-section ul li span.splitup-dtls {
+      width:70px;
+    }
+  }
+
+
+  @media screen and (min-device-width: 810px) and (max-device-width: 1080px) and (orientation : landscape) { 
+
+    .vwfs-ssn-choise-assurance-section {
+      padding-right: 40px;
+    }
+    .vwfs-ssn-repayments-section {
+      margin-top: 15px;
+    }
+    .vwfs-ssn-reduce-monthly-repayment-section .form-group {
+      width: 100%;
+    }
+    .infobox a {
+      position:static;
+    }
+    .vwfs-ssn-repayments-section .payment-splitup-section ul li span.splitup-list {
+      width: 68%;
+    }
+    .vwfs-ssn-repayments-section .payment-splitup-section ul li span.splitup-dtls {
+      width: 67px;
+    }
+	
+  }
+
+
+
+
+
+
+
+
+/* rj start */
+
+.vga-oh-roj-depositor-address {
+    font-size: 16px !important;
+    color: #001e50 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 25px !important;
+    font-family: VWText-Regular !important;
+}
+
+.OH_customRadio-roj{
+float: left;
+    display: block;
+    font-family: VWText-Bold;
+    font-size: 20px;
+    line-height: 20px;
+    width: 100%;
+    /* height: 24px; */
+    /* padding: 0 35px 0 35px; */
+    position: relative;
+    /* top: 5px; */
+    z-index: 0;
+    margin-top: 25px;
+}
+	
+	
+.vga-oh-roj-td-dealerSearchIcn {
+    position: absolute !important;
+    top: 12px !important;
+}
+.vga-oh-roj-td-dealerLocIcn {
+    position: absolute !important;
+    top: 12px !important;
+    right: 0 !important;
+}
+
+.vw-oh-roj-privacyCollectionStattementSection{
+    width: 100%;
+    display: table;
+}
+
+.vw-oh-roj-privacyCollectionStattementSection hr {
+    /* margin-top: 1rem; */
+    margin-bottom: 36px;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+@media screen and (min-device-width: 600px) and (max-device-width: 4080px) and (orientation : landscape) { 
+
+.desk-none-roj {
+    display: none !important;
+}
+
+}
+/* rj end */
+
+
+
+@media screen and (max-width:360px){
+  .vwfs-ssn-repayments-section .payment-splitup-section ul li span.splitup-dtls{
+    width: 70px !important;
+  }
+}
+
+
+/* === VWFS-FA - option popup css (Navas-mD)start === */
+
+.vgaInfoHeadmD{
+  margin: 0;
+  margin-bottom: 15px;
+  margin-left: 0px;
+  text-align: left;
+  padding-top: 4px;
+}
+.vwfsOptionUllismD ul li {
+  padding-bottom: 8px;
+  line-height: 28px;
+  margin-top: 2px;
+}
+.vwfsOptionUllismD ul li span{
+  font-size: 15px !important;
+  line-height: 20px;
+  padding-left: 0px !important;
+  color: #000!important;
+}
+.infobox-benefits .closebuttonoption {
+  position: absolute;
+  top: 3px;
+  right: 12px;
+  cursor: pointer;
+  background-color: #ececec;
+  padding: .1em;
+  border-radius: 50px;
+}
+.vwfsMoreOptionsmD{
+  width: 100%;
+  display: inline-block;
+  padding-left: 0px;
+}
+/* .vgaInfoboxPOPUPomD{
+  width: 87% !important;
+} */
+.vgaInfoboxomD {	
+  display: block;
+  /* text-align: left; */
+  float: right;
+  width: 87%;
+  /* padding-left: 5px
+}
+.PadLftmD{
+  /* padding-left: 4px; */
+}
+.vwfsMoreOptionsmD a.infobox-opener {	
+  font-size: 14px;
+  color: #001e50;
+  text-decoration: underline;
+  line-height: 20px;
+  display: inline;
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid currentcolor;
+  cursor: pointer;
+  }
+  .vgaInfoboxomD a.infobox-opener:hover{
+    background-color: rgba(194, 202, 207, 0.2);
+  } 
+.vgaInfoboxomD-benefits{
+  padding: 0 !important;
+  margin-top: -75.2px;
+  left: -1px;
+  display: block;
+  float: right;
+  width: 100%
+}
+.vwfsHeadermD{
+  padding-top: 1em;
+}
+.MTOPmD{
+  padding-top: 12px !important;
+}
+
+
+ /* @media CSS Start */
+
+ @media screen and (min-device-width: 810px) and (max-device-width: 1080px) and (orientation : landscape) { 
+      .vgaInfoboxomD a {	
+        position:static;	
+      }
+}
+
+@media (max-width: 1024px) {
+      .vwfsMoreOptionsmD{
+        /* margin-left: 12px; */
+      }
+      .vgaInfoboxomD-benefits {
+        margin-top: -73.5px;
+        width: 98%;
+        }
+      .vwfsMoreOptionsmD {
+        padding-left: 12px;
+        }
+
+      
+}
+ @media (max-width: 768px) {
+      /* .vgaInfoboxomD a {	
+        position: inherit;	
+        top: 32px;	
+        right: 15px;	
+      } */
+      .PadLftmD {
+        padding-left: 11px;
+      }
+      .vgaInfoboxomD-benefits {
+        margin-top: -86.5px;
+        width: 98%;
+        }
+      .vgaInfoboxomD {
+        width: 93%;
+      }
+      .vwfsMoreOptionsmD {
+        padding-left: 20px;
+       }
+  
+ }
+ @media (max-width: 765px) {
+      .vgaInfoboxomD-benefits {
+        margin-top: -94.5px;
+        width: 93%
+      }
+      .vwfsMoreOptionsmD {
+        padding-left: 34px;
+       }
+
+ }
+
+ @media screen and (min-device-width: 769px) and (max-device-width: 990px) {
+      /* .vgaInfoboxomD a {	
+        position: absolute;	
+        top: 32px;	
+        right: 15px;	
+      } */
+      
+ }
+ @media (max-width: 600px) {
+      .vwfs-ssn-veh-option .vga-oh-sdk-depositor-mid-right {	
+        line-height: 22px;	
+      }	
+      .vgaInfoboxomD ul li span{	
+        padding-left: 0 !important;	
+      }	
+      .vwfsOptionUllismD ul li span{	
+        line-height: 20px !important;	
+        padding-bottom: 20px !important;	
+      }	
+      .vwfsOptionUllismD ul li {	
+        padding-bottom: 0px !important;	
+      }	
+      .vgaInfoHeadmD{	
+        margin-left: 0px;	
+      }
+ }
+ @media screen and (max-width:500px){
+      /* .vgaInfoboxomD a {	
+        position: inherit;	
+        top:32px;	
+        right:15px;	
+      } */
+      .vgaInfoboxomD a.infobox-opener::before{	
+        opacity: 9;	
+      }	
+      .vgaInfoboxomD a.infobox-opener::after{	
+        opacity: 0;	
+      }
+ }
+
+
+ /* @media CSS end */
+
+/* === VWFS-FA - option popup css (Navas-mD) end === */
